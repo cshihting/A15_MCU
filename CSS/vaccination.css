@@ -85,8 +85,9 @@ img {vertical-align: middle;}
 #continent {padding:50px; color: #4d4b4b; background-color: #ffffff;}
 #gender {padding:50px; color: #4d4b4b; background-color: #ffffff;}
 #age {padding:50px; color: #4d4b4b; background-color: #ffffff;}
-#article {padding: 10px;}
 #method {padding:50px; color: #4d4b4b; background-color: #ffffff;}
+#map {padding: 30px;}
+#article {padding: 10px;}
 
 .parallax {
     opacity: 0.7;

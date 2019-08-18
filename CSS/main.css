@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background-image {
+    /* The image used */
+    background-image: url("../Image/kid.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a:hover {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.topnav a:focus {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+/* 記得在html中加上class: <a class="active">
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+*/
+
+.topnav-right {
+    float: right;
+}
+
+/* Position text in the middle of the page/image */
+.background-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.words {
+    font-size: 8px;
+    font-style: oblique; 
+    margin-bottom: 30px; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+.btn.btn-default {
+    border-radius: 20px;
+    border: 0px;
+    color: #706f6f;
+    text-shadow: none;
+    background-color: #ffffff;
+}
+
+.btn.btn-default :hover {
+    color: #ffffff;
+    background-color: #706f6f;
+    opacity: 0.6;
+}

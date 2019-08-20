@@ -12,6 +12,21 @@
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> <!--use a palette-->
+    
+    <!-- Prompt password -->
+    <script> 
+        pwIncorrect = true;
+        while (pwIncorrect) {
+            var password = prompt("Please enter the password:", "");
+            if (password == 111) {
+                pwIncorrect = false;
+            }
+            else {
+                alert('Incorrect!');
+                pwIncorrect = true;
+            }
+        };
+    </script>
 </head>
 
 

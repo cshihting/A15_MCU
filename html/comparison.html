@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vaccines for Your Children | MCU</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<link rel="stylesheet" type="text/css" href="../css/comparison.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+    
+    
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid"><a class="navbar-brand" href="../index.html">Home</a></div>
+    </nav> 
+    
+    
+<!--
+    <div class="top_parallax">
+        <img src="../Image/kids2.png" alt="Top Parallax">
+    </div>
+-->
+    
+    
+    <div class="top_parallax">
+        <div style="text-align:center;color:white">
+            <h2>Immunisation For Children</h2>
+            <h3>100% Target Vaccinations</h3>
+            <a class="btn btn-default" href="#why-vaccine" role="button" style="margin:15px">See More</a>
+        </div>
+    </div>
+
+    
+    <!-- To top button -->
+    <button onclick="topFunction()" id="top-btn">^</button>
+    
+    
+    <div class="container content" id="why-vaccine">
+        <div class="row">
+            <div class="col-sm-4">
+                <p><small>Vaccines for your children</small><br><b style="font-size:35px">Why Vaccinate?</b></p>
+                <p style="line-height: 1.8;">
+                        On-time vaccination throughout childhood is essential because it helps provide immunity before children are exposed to potentially life-threatening diseases. Vaccines are tested to ensure that they are safe and effective for children to receive at the recommended ages.  
+                </p>
+                <a href="#" style="color: inherit;text-decoration:underline;">Making the Vaccine Decision</a>
+            </div>
+            <div class="col-sm-8">
+                <img src="../img/economy_map.png" style="width: 80%;" alt="Some visualisations">
+            </div>
+        </div>
+	</div>
+
+        
+    <div class="middle_parallax"></div>
+
+    
+	<div class="content container" id="filter">
+        <h2>Vaccines By Age & Country</h2>
+        <p>You can select an age level of your child and pick up the country that you from.</p>
+        
+        <br>
+        
+		<div class="row">
+			<div class="col-sm-4">
+                <a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">Birth</button>
+                </a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">1-2 months</button>
+                </a>
+			</div>
+            <div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">3-4 months</button>
+                </a>
+			</div>
+		</div>
+        
+		<hr class="thematic_break">
+        
+        <div class="row">
+			<div class="col-sm-4">
+                <a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">5-11 months</button>
+                </a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">12-23 months</button>
+                </a>
+			</div>
+            <div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">2-3 years</button>
+                </a>
+			</div>
+		</div>
+        
+        <hr class="thematic_break">
+        
+        <div class="row">
+			<div class="col-sm-4">
+                <a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">4-6 years</button>
+                </a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">7-12 years</button>
+                </a>
+			</div>
+            <div class="col-sm-4">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">12+ years</button>
+                </a>
+			</div>
+		</div>
+
+        <hr class="thematic_break">
+        <br>
+        
+        <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+        <div class="custom-select" style="width:100%;">
+            <select>
+                <option value="0">Select Country</option>
+                <option value="1">China</option>
+                <option value="2">UK</option>
+                <option value="3">India</option>
+                <option value="4">Vietnam</option>
+                <option value="5">Philippines</option>
+            </select>
+        </div>
+
+        <script>
+            var x, i, j, selElmnt, a, b, c;
+            /*look for any elements with the class "custom-select":*/
+            x = document.getElementsByClassName("custom-select");
+            for (i = 0; i < x.length; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                /*for each element, create a new DIV that will act as the selected item:*/
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                /*for each element, create a new DIV that will contain the option list:*/
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 1; j < selElmnt.length; j++) {
+                    /*for each option in the original select element,
+                    create a new DIV that will act as an option item:*/
+                    c = document.createElement("DIV");
+                    c.innerHTML = selElmnt.options[j].innerHTML;
+                    c.addEventListener("click", function(e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < s.length; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            for (k = 0; k < y.length; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                    });
+                    b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function(e) {
+                    /*when the select box is clicked, close any other select boxes,
+                    and open/close the current select box:*/
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                });
+            }
+            function closeAllSelect(elmnt) {
+                /*a function that will close all select boxes in the document,
+                except the current select box:*/
+                var x, y, i, arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                for (i = 0; i < y.length; i++) {
+                    if (elmnt == y[i]) {
+                        arrNo.push(i)
+                    } else {
+                        y[i].classList.remove("select-arrow-active");
+                    }
+                }
+                for (i = 0; i < x.length; i++) {
+                    if (arrNo.indexOf(i)) {
+                        x[i].classList.add("select-hide");
+                    }
+                }
+            }
+            /*if the user clicks anywhere outside the select box,
+            then close all select boxes:*/
+            document.addEventListener("click", closeAllSelect);
+        </script>
+        
+        
+        <br>
+        
+        
+        <div class="row" align="right">
+			<div class="col-sm-8">
+			</div>
+            <div class="col-sm-2" style="float: right;">
+				<a href="#filter" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">Search</button>
+                </a>
+			</div>
+		</div>  
+        
+        
+        <div class="row">
+            <p>Testing</p>
+			<div class="col-sm-2">
+                <a href="comparison-china.html" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">China</button>
+                </a>
+			</div>
+			<div class="col-sm-2">
+				<a href="comparison-uk.html" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">UK</button>
+                </a>
+			</div>
+            <div class="col-sm-2">
+				<a href="comparison-india.html" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">India</button>
+                </a>
+			</div>
+            <div class="col-sm-2">
+				<a href="comparison-vietnam.html" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">Vietnam</button>
+                </a>
+			</div>
+            <div class="col-sm-2">
+				<a href="comparison-phi.html" style="color:inherit;text-decoration:none;">
+                    <button class="btn-to-comparison">Phillipines</button>
+                </a>
+			</div>
+		</div>
+	</div>
+    
+    
+	<div class="bottom_parallax">
+		<p>
+			<i>There is widespread concern that suicide rates might increase in countries 
+                affected by the global economic crisis, in view of evidence that economic 
+                downturns, and associated rises in unemployment, are followed by increases 
+                in suicide.</i>
+		</p>
+		<p style="font-size:10px;">- BMJ 2013;347:f5239</p>
+	</div>
+
+    
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("top-btn").style.display = "block";
+      } else {
+        document.getElementById("top-btn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+</html>

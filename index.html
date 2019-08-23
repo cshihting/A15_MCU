@@ -12,6 +12,11 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,231 +48,315 @@
 
 <body id="page-top">    
 
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">MCU</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Schedule</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="#page-top">MCU</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#page-top">Home</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#general">General Info</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#australia">Australia Info</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#links">Quick Links</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Migrant Child Unit</h1>
-      <h3 class="mb-5">
-        <em>Immunisation Save Your Kids Life</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    <!-- Header -->
+<!--
+    <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+            <h1 class="mb-1">Migrant Child Unit</h1>
+            <h3 class="mb-5">
+                <em>Immunisation Save Your Kids Life</em>
+            </h3>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+        <div class="overlay"></div>
+    </header>
+-->
+
+    <!--  Slideshow  -->
+    <div class="container" style="margin-top:70px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="max-height: 500px !important;">
+
+                <div class="item active">
+                    <img src="img/kids1.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Event 1</h3>
+                        <p>Take care of your kids!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/kids2.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Event 2</h3>
+                        <p>Join us!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/kids3.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Event 3</h3>
+                        <p>Health Care!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+    
+    <!-- General Info -->
+    <section class="content-section bg-light" id="general">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>General Information</h2>
+                    <p class="lead mb-5">This is a section for general vaccination information<br>
+                        <a href="https://unsplash.com/">Unsplash</a>!
+                    </p>
+                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-          <h4>
-            <strong>Information</strong>
-          </h4>
-          <p class="text-faded mb-0">Basic knowledge about vaccinations.</p>
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+        <div class="container">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Services</h3>
+                <h2 class="mb-5">What We Offer</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-screen-smartphone"></i>
+                    </span>
+                    <h4>
+                        <strong>Information</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Basic knowledge about vaccinations.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-pencil"></i>
+                    </span>
+                    <h4>
+                        <strong>Location</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Nearby health centers and events.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-like"></i>
+                    </span>
+                    <h4>
+                        <strong>Education</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Millions of users
+                        <i class="fas fa-heart"></i>
+                    Start MCU!</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-mustache"></i>
+                    </span>
+                    <h4>
+                        <strong>More</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Better understanding...</p>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Location</strong>
-          </h4>
-          <p class="text-faded mb-0">Nearby health centers and events.</p>
+    </section>
+
+    <!-- Callout -->
+<!--
+    <section class="callout">
+        <div class="container text-center">
+            <h2 class="mx-auto mb-5">We are
+                <em>all-in-one</em>
+            website!</h2>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">See more!</a>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Education</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start MCU!</p>
+    </section>
+-->
+
+    <!-- Australia Info -->
+    <section class="content-section" id="australia">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Australia Information</h3>
+                <h2 class="mb-5">Vaccinations</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <a href="html/comparison.html" style="color:inherit;text-decoration:none;">
+                        <button class="btn-to-compare">Compare</button>
+                    </a>
+                    <p>
+                      Bla bla bla...
+                    </p>
+                    <p>
+                      Bla bla bla...
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <img src="img/v.png" style="width: 90%;" alt="Gender Mental Table">
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>More</strong>
-          </h4>
-          <p class="text-faded mb-0">Better understanding...</p>
+    </section>
+    
+    <!-- Quick links -->
+    <section class="content-section" id="links">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">information</h3>
+                <h2 class="mb-5">Quick Links</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.rch.org.au/immigranthealth/clinical/Initial_assessment/">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>Information about vaccination as per age</h2>
+                                <p class="mb-0">Description...</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/kids1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://immunisationhandbook.health.gov.au/vaccination-for-special-risk-groups/vaccination-for-migrants-refugees-and-people-seeking-asylum-in">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>Immunization Handbook</h2>
+                                <p class="mb-0">Description...</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/kids2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="http://apps.who.int/immunization_monitoring/globalsummary/countries?countrycriteria%5Bcountry%5D%5B%5D=CHN&commit=OK">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>WHO vaccine-preventable diseases</h2>
+                                <p class="mb-0">Description...</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/kids3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.health.gov.au">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>Australia Government Immunisation</h2>
+                                <p class="mb-0">Description...</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/kids4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">We are
-        <em>all-in-one</em>
-        website!</h2>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">See more!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">schedule</h3>
-        <h2 class="mb-5">Vaccinations</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>V1</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/kids1.jpg" alt="">
-          </a>
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+            <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+            <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>V2</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/kids2.jpg" alt="">
-          </a>
+    </section>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                        <i class="icon-social-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#">
+                        <i class="icon-social-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; MCU 2019</p>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>V3</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/kids3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>V4</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/kids4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; MCU 2019</p>
-    </div>
-  </footer>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
 
 </body>
 

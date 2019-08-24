@@ -36,7 +36,7 @@ body {
 }
 
 /* Button to comparison */
-.btn-to-comparison {
+.btn-to-compare {
     width: 100%;
     padding: 10px 26px;
     margin: 6px 0;
@@ -53,7 +53,7 @@ body {
     border: 2px solid #a3a3a3;
 }
 
-.btn-to-comparison:hover {
+.btn-to-compare:hover {
     background-color: #a3a3a3;
     color: white;
 }

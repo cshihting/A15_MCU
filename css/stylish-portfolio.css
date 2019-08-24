@@ -484,12 +484,14 @@ a:hover, a:focus, a:active {
 }
 
 .btn-to-compare {
+    width: 100%;
     padding: 10px 26px;
     margin: 6px 0;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+    display: block;
+    font-size: 16px;
+    color: #555555;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;

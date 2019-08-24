@@ -75,17 +75,17 @@
 		<div class="row">
 			<div class="col-sm-4">
                 <a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">Birth</button>
+                    <button class="btn-to-compare">Birth-2 months</button>
                 </a>
 			</div>
 			<div class="col-sm-4">
 				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">1-2 months</button>
+                    <button class="btn-to-compare">3-4 months</button>
                 </a>
 			</div>
             <div class="col-sm-4">
 				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">3-4 months</button>
+                    <button class="btn-to-compare">5-6 months</button>
                 </a>
 			</div>
 		</div>
@@ -95,37 +95,17 @@
         <div class="row">
 			<div class="col-sm-4">
                 <a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">5-11 months</button>
+                    <button class="btn-to-compare">7-12 months</button>
                 </a>
 			</div>
 			<div class="col-sm-4">
 				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">12-23 months</button>
+                    <button class="btn-to-compare">13-18 months</button>
                 </a>
 			</div>
             <div class="col-sm-4">
 				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">2-3 years</button>
-                </a>
-			</div>
-		</div>
-        
-        <hr class="thematic_break">
-        
-        <div class="row">
-			<div class="col-sm-4">
-                <a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">4-6 years</button>
-                </a>
-			</div>
-			<div class="col-sm-4">
-				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">7-12 years</button>
-                </a>
-			</div>
-            <div class="col-sm-4">
-				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">12+ years</button>
+                    <button class="btn-to-compare">19+ months</button>
                 </a>
 			</div>
 		</div>
@@ -135,7 +115,7 @@
         
         <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
         <div class="custom-select" style="width:100%;">
-            <select>
+            <select id="mySelect" onchange="myFunction()">
                 <option value="0">Select Country</option>
                 <option value="1">China</option>
                 <option value="2">UK</option>
@@ -145,6 +125,13 @@
             </select>
         </div>
 
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = "You selected: " + x;
+            }
+        </script>
+        
         <script>
             var x, i, j, selElmnt, a, b, c;
             /*look for any elements with the class "custom-select":*/
@@ -219,7 +206,7 @@
             then close all select boxes:*/
             document.addEventListener("click", closeAllSelect);
         </script>
-        
+
         
         <br>
         
@@ -229,7 +216,7 @@
 			</div>
             <div class="col-sm-2" style="float: right;">
 				<a href="#filter" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">Search</button>
+                    <button class="btn-to-compare">Search</button>
                 </a>
 			</div>
 		</div>  
@@ -239,27 +226,27 @@
             <p>Testing</p>
 			<div class="col-sm-2">
                 <a href="comparison-china.html" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">China</button>
+                    <button class="btn-to-compare">China</button>
                 </a>
 			</div>
 			<div class="col-sm-2">
 				<a href="comparison-uk.html" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">UK</button>
+                    <button class="btn-to-compare">UK</button>
                 </a>
 			</div>
             <div class="col-sm-2">
 				<a href="comparison-india.html" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">India</button>
+                    <button class="btn-to-compare">India</button>
                 </a>
 			</div>
             <div class="col-sm-2">
 				<a href="comparison-vietnam.html" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">Vietnam</button>
+                    <button class="btn-to-compare">Vietnam</button>
                 </a>
 			</div>
             <div class="col-sm-2">
 				<a href="comparison-phi.html" style="color:inherit;text-decoration:none;">
-                    <button class="btn-to-comparison">Phillipines</button>
+                    <button class="btn-to-compare">Phillipines</button>
                 </a>
 			</div>
 		</div>

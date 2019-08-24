@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comparison</title>
+	<title>Age - Three to Four Months</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/country-compare.css">
@@ -19,32 +19,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid"><a class="navbar-brand" href="../index.html">Home</a></div>
     </nav>
-    
-    <!-- To top button -->
-<!--    <button onclick="topFunction()" id="top-btn">^</button>-->  
-   
+       
     <!-- To top button -->
     <button onclick="topFunction()" id="top-btn">^</button>
     
-<!--
-    <section class="content container" style="margin: 75px 40px 10px">
-        <div class="row">
-            <div class="col-sm-8">
-                <img src="../img/nah.png" style="width: 90%;" alt="Some visualisations">
-            </div>
-            <div class="col-sm-3">
-                <p><small>Vaccines for your children age from...</small><br><b style="font-size:32px">Birth to 2 months</b></p>
-                <p style="line-height: 1.8;">
-                        On-time vaccination throughout childhood is essential because it helps provide immunity before children are exposed to potentially life-threatening diseases. Vaccines are tested to ensure that they are safe and effective for children to receive at the recommended ages.  
-                </p>
-                <a href="#" style="color: inherit;text-decoration:underline;">Making the Vaccine Decision</a>
-            </div>
-        </div>
-	</section>
--->
-    
     <section class="content container">
-        <h2>Age from Birth to 2 months - Vaccines By Country</h2>
+        <h2>Age from 3 to 4 Months - Vaccines By Country</h2>
         <p>Where are you from?</p>
 
         <br>
@@ -69,23 +49,6 @@
                     <th style="text-align: center;">China</th>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('BCG-modal','BCG');">卡介苗 (BCG)</a></td>
-                    <!-- The Modal -->
-                    <div id="BCG-modal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
-                            <h3>Bacille Calmette Guerin (BCG)</h3>
-                            <p id="BCG">
-                                BCG: An effective immunization against tuberculosis. BCG stands for Bacille Calmette Guerin. BCG is a weakened (attenuated) version of a bacteria called Mycobacterium bovis which is closely related to Mycobacterium tuberculosis, the agent responsible for tuberculosis<br>
-                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=12067">source</a>
-                            </p>
-                        </div>
-                    </div>
-                    <td><i class="fa fa-remove"></i></td>
-                    <td><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
                     <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
                     <div id="HepB-modal" class="modal">
                         <!-- Modal content -->
@@ -99,7 +62,7 @@
                         </div>
                     </div>
                     <td><i class="fa fa-check"></i></td>
-                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-remove"></i></td>
                 </tr>
                 <tr>
                     <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a></td>     
@@ -152,6 +115,23 @@
                     <td><i class="fa fa-remove"></i></td>
                     <td><i class="fa fa-check"></i></td>
                 </tr>
+                <tr>
+                    <td><a onclick="funcOfDescription('DTP-modal','DTP');">百白破疫苗 (DTP)</a></td>
+                    <!-- The Modal -->
+                    <div id="DTP-modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                            <h3>百白破疫苗 (DTP)</h3>
+                            <p id="DTP">
+                                DPT immunization: Immunization to protect against diphtheria, pertussis (whooping cough), and tetanus. DPT immunizations are given in a series of 5 shots at 2, 4, 6, 18 months of age and 4-6 years of age.<br>
+                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3114">source</a>
+                            </p>
+                        </div>
+                    </div>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-remove"></i></td>
+                </tr>
             </table>
         </div>
     </section>
@@ -200,18 +180,8 @@
                     <th style="text-align: center;">India</th>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('BCG-modal','BCG');">卡介苗 (BCG)</a></td>
-                    <td><i class="fa fa-remove"></i></td>
-                    <td><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
                     <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
                     <td><i class="fa fa-check"></i></td>
-                    <td><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
-                    <td><a onclick="funcOfDescription('OPV-modal','OPV');">Oral polio vaccine 脊髓灰质炎疫苗 (OPV)</a></td>
-                    <td><i class="fa fa-remove"></i></td>
                     <td><i class="fa fa-check"></i></td>
                 </tr>
                 <tr>
@@ -225,25 +195,43 @@
                     <td><i class="fa fa-remove"></i></td>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('DHH-modal','DHH');">OPV1, Penta1 (DPT + HepB + HiB)</a></td>
+                    <td><a onclick="funcOfDescription('OPV-Penta-modal','OPV-Penta');">OPV, Penta (DPT + HepB + HiB)</a></td>
                     <!-- The Modal -->
-                    <div id="DHH-modal" class="modal">
+                    <div id="OPV-Penta-modal" class="modal">
                         <!-- Modal content -->
                         <div class="modal-content">
 <!--                                    <span class="close">&times;</span>-->
-                            <h3>OPV1, Penta1 (DPT + HepB + HiB)</h3>
-                            <p id="DHH">
+                            <h3>OPV, Penta (DPT + HepB + HiB)</h3>
+                            <p id="OPV-Penta">
+                                OPV consists of a mixture of live attenuated poliovirus strains of each of the three serotypes, selected by their ability to mimic the immune response following infection with wild polioviruses, but with a significantly reduced incidence of spreading to the central nervous system. Three or more spaced doses of OPV are required to generate adequate levels of seroconversion. The action of oral polio vaccine (OPV) is two-pronged. OPV produces antibodies in the blood ('humoral' or serum immunity) to all three types of poliovirus, and in the event of infection, this protects the individual against polio paralysis by preventing the spread of poliovirus to the nervous system. OPV strains also produce a local immune response in the lining ('mucous membrane') of the intestines - the primary site for poliovirus multiplication. The antibodies produced there inhibit the multiplication of subsequent infections of 'wild' (naturally occurring) virus. This intestinal immune response to OPV is probably a reason why mass campaigns with OPV have been shown to stop person-to-person transmission of wild poliovirus. In very rare cases, the administration of OPV results in vaccine-associated paralysis associated with a reversion of the vaccine strains to the more neurovirulent profile of wild poliovirus. In a few instances, such vaccine strains have become both neurovirulent and transmissible and have resulted in infectious poliomyelitis.<br><br>
                                 DPT immunization: Immunization to protect against diphtheria, pertussis (whooping cough), and tetanus. DPT immunizations are given in a series of 5 shots at 2, 4, 6, 18 months of age and 4-6 years of age.<br><br>
                                 Hepatitis B immunization: Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br><br>
                                 HIB immunization: This immunization is designed to prevent diseases caused by Haemophilus influenzae type B (HIB), a bacteria responsible for a range of serious "invasive" diseases including meningitis with potential brain damage and epiglottitis with airway obstruction.<br><br>
-                                <a href="https://www.who.int/ith/vaccines/rotavirus/en/">source - DPT </a>
-                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709">source - HepB</a>
+                                <a href="https://www.who.int/biologicals/areas/vaccines/polio/opv/en/">source - OPV </a><br>
+                                <a href="https://www.who.int/ith/vaccines/rotavirus/en/">source - DPT </a><br>
+                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709">source - HepB</a><br>
                                 <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3753">source - HiB</a>
                             </p>
                         </div>
                     </div>
                     <td><i class="fa fa-remove"></i></td>
                     <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td><a onclick="funcOfDescription('IPV-modal','IPV');">IPV</a></td>
+                    <div id="IPV-modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                            <h3>IPV</h3>
+                            <p id="IPV">
+                                IPV: Inactivated polio vaccine. The polio virus in IPV has been inactivated (killed). The inactivated polio vaccine (IPV) is also called the Salk vaccine after the late American physician-virologist Jonas Salk.<br>
+                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=4042">source</a>
+                            </p>
+                        </div>
+                    </div>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-remove"></i></td>
                 </tr>
             </table>
         </div>
@@ -262,11 +250,6 @@
                     <th style="text-align: center;">Vietnam</th>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('BCG-modal','BCG');">卡介苗 (BCG)</a></td>
-                    <td><i class="fa fa-remove"></i></td>
-                    <td><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
                     <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
                     <td><i class="fa fa-check"></i></td>
                     <td><i class="fa fa-check"></i></td>
@@ -282,7 +265,23 @@
                     <td><i class="fa fa-remove"></i></td>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('DHH-modal','DHH');">Quinvaxem vaccine (DPT - HepB - Hib)</a></td>
+                    <td><a onclick="funcOfDescription('Quinvaxem-modal','Quinvaxem');">Quinvaxem vaccine (DPT - HepB - Hib)</a></td>
+                    <!-- The Modal -->
+                    <div id="Quinvaxem-modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                            <h3>Quinvaxem vaccine (DPT - HepB - Hib)</h3>
+                            <p id="Quinvaxem">
+                                DPT immunization: Immunization to protect against diphtheria, pertussis (whooping cough), and tetanus. DPT immunizations are given in a series of 5 shots at 2, 4, 6, 18 months of age and 4-6 years of age.<br><br>
+                                Hepatitis B immunization: Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br><br>
+                                HIB immunization: This immunization is designed to prevent diseases caused by Haemophilus influenzae type B (HIB), a bacteria responsible for a range of serious "invasive" diseases including meningitis with potential brain damage and epiglottitis with airway obstruction.<br><br>
+                                <a href="https://www.who.int/ith/vaccines/rotavirus/en/">source - DPT </a><br>
+                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709">source - HepB</a><br>
+                                <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3753">source - HiB</a>
+                            </p>
+                        </div>
+                    </div>
                     <td><i class="fa fa-remove"></i></td>
                     <td><i class="fa fa-check"></i></td>
                 </tr>
@@ -308,11 +307,6 @@
                     <th style="text-align: center;">Philippines</th>
                 </tr>
                 <tr>
-                    <td><a onclick="funcOfDescription('BCG-modal','BCG');">卡介苗 (BCG)</a></td>
-                    <td><i class="fa fa-remove"></i></td>
-                    <td><i class="fa fa-check"></i></td>
-                </tr>
-                <tr>
                     <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
                     <td><i class="fa fa-check"></i></td>
                     <td><i class="fa fa-check"></i></td>
@@ -326,6 +320,33 @@
                     <td><a onclick="funcOfDescription('RotaC-modal','RotaC');">Rotavirus (RotaC)</a></td>
                     <td><i class="fa fa-check"></i></td>
                     <td><i class="fa fa-remove"></i></td>
+                </tr>
+                <tr>
+                    <td><a onclick="funcOfDescription('IPV-modal','IPV');">IPV</a></td>
+                    <td><i class="fa fa-remove"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td><a onclick="funcOfDescription('OPV-modal','OPV');">Oral polio vaccine 脊髓灰质炎疫苗 (OPV)</a></td>
+                    <td><i class="fa fa-remove"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td><a onclick="funcOfDescription('PCV-modal','PCV');">Pneumo_conj (PCV)</a></td>
+                    <!-- The Modal -->
+                    <div id="PCV-modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                            <h3>Pneumo_conj (PCV)</h3>
+                            <p id="PCV">
+                                Pneumococcal disease (noo-muh-KOK-uhl) causes thousands of infections every year in the United States. It’s more common in children, but it’s most likely to cause serious complications in adults. The good news is that pneumococcal vaccines can help prevent the disease.<br>
+                                <a href="https://www.vaccines.gov/diseases/pneumonia">source</a><br>
+                            </p>
+                        </div>
+                    </div>
+                    <td><i class="fa fa-remove"></i></td>
+                    <td><i class="fa fa-check"></i></td>
                 </tr>
             </table>
         </div>

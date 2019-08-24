@@ -503,3 +503,16 @@ a:hover, a:focus, a:active {
     background-color: #a3a3a3;
     color: white;
 }
+
+/* Safari RWD */
+@media screen and (max-width: 1024px){
+#text_biblioteca {
+    margin-left:24.553954%;
+}
+#image2_biblioteca {
+    margin-left:24.165918%
+}
+#box2_biblioteca {
+    margin-left:7.57416%
+}
+}

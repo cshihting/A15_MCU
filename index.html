@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>MCU</title>
-
+    
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!--  Safari RWD  -->
-    <link rel="stylesheet" href="css/webkit.css" media="screen and (-webkit-min-device-pixel-ratio:0)" type="text/css"/>
+<!--    <link rel="stylesheet" href="css/webkit.css" media="screen and (-webkit-min-device-pixel-ratio:0)" type="text/css"/>-->
 
 
     <!--  Password  -->
@@ -52,9 +52,8 @@
 -->
     
 </head>
-
-<body id="page-top">    
-
+    
+<body id="page-top">
     <!-- Navigation -->
     <a class="menu-toggle rounded" href="#">
         <i class="fas fa-bars"></i>
@@ -63,9 +62,6 @@
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
                 <a class="js-scroll-trigger" href="#page-top">MCU</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#page-top">Home</a>
             </li>
             <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="#general">General Info</a>
@@ -80,11 +76,11 @@
                 <a class="js-scroll-trigger" href="#links">Quick Links</a>
             </li>
             <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#contact">Contact</a>
+                <a class="js-scroll-trigger" href="#location">Location</a>
             </li>
         </ul>
     </nav>
-
+    
     <!-- Header -->
 <!--
     <header class="masthead d-flex">
@@ -114,26 +110,32 @@
 
                 <div class="item active">
                     <img src="img/kids1.jpg" alt="Los Angeles" style="width:100%;">
+<!--
                     <div class="carousel-caption">
                         <h3>Event 1</h3>
                         <p>Take care of your kids!</p>
                     </div>
+-->
                 </div>
 
                 <div class="item">
                     <img src="img/kids2.jpg" alt="Chicago" style="width:100%;">
+<!--
                     <div class="carousel-caption">
                         <h3>Event 2</h3>
                         <p>Join us!</p>
                     </div>
+-->
                 </div>
 
                 <div class="item">
                     <img src="img/kids3.jpg" alt="New York" style="width:100%;">
+<!--
                     <div class="carousel-caption">
                         <h3>Event 3</h3>
                         <p>Health Care!</p>
                     </div>
+-->
                 </div>
             </div>
 
@@ -233,11 +235,518 @@
             </div>
             <div class="row">
                 <div class="col-sm-12" style="overflow-x:auto;">
+                    <!--  Dropdown selection  -->
+                    <select class="select-selected">
+                        <option value = '0'>Select Age</option> 
+                        <option value = 'birth'>Birth (7 days)</option>
+                        <option value = 'zero-2'>0-2 months</option>
+                        <option value = 'three-4'>3-4 months</option>
+                        <option value = 'five-6'>5-6 months</option>
+                        <option value = 'seven-12'>7-12 months</option>
+                        <option value = 'thirteen-18'>13-18 months</option>
+                        <option value = 'nineteen-4years'>19 months - 4 years</option>
+                        <option value = 'other'>5+ years</option>
+                    </select>
+                    
+                    <!--  Birth (7 days)  -->
+                    <section class="birth box">
+                        <h3>Birth (7 days)</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>Birth</td>
+                                <td><a onclick="funcOfDescription('b_HepB-modal','b_HepB');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis B (HepB)</a></td>
+                                <!-- The Modal -->
+                                <div id="b_HepB-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis B immunization (HepB)</h3>
+                                        <p id="b_HepB">
+                                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  0-2 months  -->
+                    <section class="zero-2 box">
+                        <h3>0-2 Months</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>2 months</td>
+                                <td><a onclick="funcOfDescription('HepB_2-modal','HepB_2');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis B (HepB)</a><br>
+                                    (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
+                                    Haemophilus influenzae type B, polio)</td>
+                                <!-- The Modal -->
+                                <div id="HepB_2-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis B immunization (HepB)</h3>
+                                        <p id="HepB_2">
+                                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>2 months</td>
+                                <td><a onclick="funcOfDescription('13vPCV_2-modal','13vPCV_2');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (13vPCV)</a></td>
+                                <!-- The Modal -->
+                                <div id="13vPCV_2-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
+                                        <p id="13vPCV_2">
+                                            13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
+                                            <a href="https://immunisationhandbook.health.gov.au/technical-terms#conjugate-vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>2 months</td>
+                                <td><a onclick="funcOfDescription('RotaC_2-modal','RotaC_2');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Rotavirus (RotaC)</a></td>
+                                <!-- The Modal -->
+                                <div id="RotaC_2-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Rotavirus (RotaC)</h3>
+                                        <p id="RotaC_2">
+                                            Two live, attenuated, oral rotavirus vaccines are internationally licensed, and routine childhood vaccination has been initiated in a number of countries. The clinical efficacy of the rotavirus vaccines has been demonstrated in most parts of the world. WHO recommends the inclusion of rotavirus vaccination in all national immunization programmes, particularly in countries at high risk of severe disease and fatal outcomes<br>
+                                            <a href="https://www.who.int/ith/vaccines/rotavirus/en/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  3-4 months  -->
+                    <section class="three-4 box">
+                        <h3>3-4 Months</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>4 months</td>
+                                <td><a onclick="funcOfDescription('HepB_4-modal','HepB_4');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis B (HepB)</a><br>
+                                    (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
+                                    Haemophilus influenzae type B, polio)</td>
+                                <!-- The Modal -->
+                                <div id="HepB_4-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis B immunization (HepB)</h3>
+                                        <p id="HepB_4">
+                                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>4 months</td>
+                                <td><a onclick="funcOfDescription('13vPCV_4-modal','13vPCV_4');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (13vPCV)</a></td>
+                                <!-- The Modal -->
+                                <div id="13vPCV_4-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
+                                        <p id="13vPCV_4">
+                                            13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
+                                            <a href="https://immunisationhandbook.health.gov.au/technical-terms#conjugate-vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>4 months</td>
+                                <td><a onclick="funcOfDescription('RotaC_4-modal','RotaC_4');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Rotavirus (RotaC)</a></td>
+                                <!-- The Modal -->
+                                <div id="RotaC_4-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Rotavirus (RotaC)</h3>
+                                        <p id="RotaC_4">
+                                            Two live, attenuated, oral rotavirus vaccines are internationally licensed, and routine childhood vaccination has been initiated in a number of countries. The clinical efficacy of the rotavirus vaccines has been demonstrated in most parts of the world. WHO recommends the inclusion of rotavirus vaccination in all national immunization programmes, particularly in countries at high risk of severe disease and fatal outcomes<br>
+                                            <a href="https://www.who.int/ith/vaccines/rotavirus/en/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  5-6 months  -->
+                    <section class="five-6 box">
+                        <h3>5-6 Months</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>6 months</td>
+                                <td><a onclick="funcOfDescription('HepB_6-modal','HepB_6');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis B (HepB)</a><br>
+                                    (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
+                                    Haemophilus influenzae type B, polio)</td>
+                                <!-- The Modal -->
+                                <div id="HepB_6-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis B immunization (HepB)</h3>
+                                        <p id="HepB_6">
+                                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>6 months</td>
+                                <td><a onclick="funcOfDescription('13vPCV_6-modal','13vPCV_6');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (13vPCV)</a></td>
+                                <!-- The Modal -->
+                                <div id="13vPCV_6-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
+                                        <p id="13vPCV_6">
+                                            13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
+                                            <a href="https://immunisationhandbook.health.gov.au/technical-terms#conjugate-vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>6 months</td>
+                                <td><a onclick="funcOfDescription('RotaC_6-modal','RotaC_6');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Rotavirus (RotaC)</a></td>
+                                <!-- The Modal -->
+                                <div id="RotaC_6-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Rotavirus (RotaC)</h3>
+                                        <p id="RotaC_6">
+                                            Two live, attenuated, oral rotavirus vaccines are internationally licensed, and routine childhood vaccination has been initiated in a number of countries. The clinical efficacy of the rotavirus vaccines has been demonstrated in most parts of the world. WHO recommends the inclusion of rotavirus vaccination in all national immunization programmes, particularly in countries at high risk of severe disease and fatal outcomes<br>
+                                            <a href="https://www.who.int/ith/vaccines/rotavirus/en/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                            <td>6 months</td>
+                            <td><a onclick="funcOfDescription('Influenza_6-modal','Influenza_6');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Influenza - annually</a><br>
+                                for those with certain medical risk factors 6 months and over and Aboriginal and Torres Strait Islander children 6-months to 5 years.</td>
+                            <!-- The Modal -->
+                            <div id="Influenza_6-modal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <h3>Influenza</h3>
+                                    <p id="Influenza_6">
+                                        A vaccine against influenza that typically contains a mixture of strains of influenza virus cultured in chick embryos:<br>
+                                        a : one that is injectable and contains formaldehyde-inactivated influenza viruses<br>
+                                        b : one that is delivered as a nasal spray and contains live attenuated influenza viruses<br>
+                                        <a href="https://www.merriam-webster.com/medical/influenza%20vaccine" target="_blank">source</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  7-12 months  -->
+                    <section class="seven-12 box">
+                        <h3>7-12 Months</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>12 months</td>
+                                <td><a onclick="funcOfDescription('MMR_12-modal','MMR_12');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Measles, mumps and rubella (MMR)</a></td>
+
+                                <!-- The Modal -->
+                                <div id="MMR_12-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+    <!--                                    <span class="close">&times;</span>-->
+                                        <h3>Measles mumps and rubella vaccine (MMR)</h3>
+                                        <p id="MMR_12">
+                                            Measles immunization: The standard MMR vaccine is given to prevent measles, mumpsand rubella (German measles).<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=4303" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>12 months</td>
+                                <td><a onclick="funcOfDescription('ACWY_12-modal','ACWY_12');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Meningococcal ACWY (Men ACWY)</a></td>
+
+                                <!-- The Modal -->
+                                <div id="ACWY_12-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+    <!--                                    <span class="close">&times;</span>-->
+                                        <h3>Meningococcal ACWY-135 conjugate vaccine (Men ACWY)</h3>
+                                        <p id="ACWY_12">
+                                            The MenACWY vaccine is given by a single injection into the upper arm and protects against 4 different strains of the meningococcal bacteria that cause meningitis and blood poisoning (septicaemia): A, C, W and Y. The MenACWY vaccine is called Nimenrix.<br>
+                                            <a href="https://www.nhs.uk/conditions/vaccinations/men-acwy-vaccine/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>12 months</td>
+                                <td><a onclick="funcOfDescription('13vPCV_12-modal','13vPCV_12');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (13vPCV)</a></td>
+                                <!-- The Modal -->
+                                <div id="13vPCV_12-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
+                                        <p id="13vPCV_12">
+                                            13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
+                                            <a href="https://immunisationhandbook.health.gov.au/technical-terms#conjugate-vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>12 months</td>
+                                <td><a onclick="funcOfDescription('HepA_12-modal','HepA_12');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis A – 1st dose (HepA)</a><br>
+                                    Aboriginal and Torres Strait Islander children in high-risk areas</td>
+                                <!-- The Modal -->
+                                <div id="HepA_12-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis A pediatric dose vaccine (HepA)</h3>
+                                        <p id="HepA_12">
+                                            Hepatitis A vaccine (Havrix, Vaqta) is used to prevent hepatitis A, a type of liver disease that is caused by the hepatitis A virus (HAV)<br>
+                                            <a href="https://www.medicinenet.com/hepatitis_a_vaccine-injection/article.htm" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  13-18 months  -->
+                    <section class="thirteen-18 box">
+                        <h3>13-18 Months</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>18 months</td>
+                                <td><a onclick="funcOfDescription('Hib_18-modal','Hib_18');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Haemophilus influenza type B (Hib)</a></td>
+                                <!-- The Modal -->
+                                <div id="Hib_18-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Haemophilus influenzae type b vaccine (Hib)</h3>
+                                        <p id="Hib_18">
+                                            HIB immunization: This immunization is designed to prevent diseases caused by Haemophilus influenzae type B (HIB), a bacteria responsible for a range of serious "invasive" diseases including meningitis with potential brain damage and epiglottitis with airway obstruction.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3753" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>18 months</td>
+                                <td><a onclick="funcOfDescription('MMRV_18-modal','MMRV_18');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Measles, mumps, rubella, chickenpox (MMRV)</a></td>
+                                <!-- The Modal -->
+                                <div id="MMRV_18-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Measles, mumps, rubella and varicella vaccine (MMRV)</h3>
+                                        <p id="MMRV_18">
+                                            A vaccine protects against measles, mumps, rubella, and varicella (chickenpox).<br>
+                                            <a href="https://www.cdc.gov/vaccines/vpd/mmr/public/index.html" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>18 months</td>
+                                <td><a onclick="funcOfDescription('DTPa_18-modal','DTPa_18');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">DTPa</a></td>
+                                <!-- The Modal -->
+                                <div id="DTPa_18-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>DTPa</h3>
+                                        <p id="DTPa_18">
+                                            DTaP is a vaccine that helps children younger than age 7 develop immunity to three deadly diseases caused by bacteria: diphtheria, tetanus, and whooping cough (pertussis). Tdap is a booster immunization given at age 11 that offers continued protection from those diseases for adolescents and adults.<br>
+                                            <a href="https://www.webmd.com/children/vaccines/qa/what-should-you-know-about-dtap-and-tdap-vaccines" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>18 months</td>
+                                <td><a onclick="funcOfDescription('HepA_18-modal','HepA_18');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Hepatitis A – 2nd dose (HepA)</a><br>
+                                    Aboriginal and Torres Strait Islander children</td>
+                                <!-- The Modal -->
+                                <div id="HepA_12-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Hepatitis A pediatric dose vaccine (HepA)</h3>
+                                        <p id="HepA_12">
+                                            Hepatitis A vaccine (Havrix, Vaqta) is used to prevent hepatitis A, a type of liver disease that is caused by the hepatitis A virus (HAV)<br>
+                                            <a href="https://www.medicinenet.com/hepatitis_a_vaccine-injection/article.htm" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  19 months - 4 years -->
+                    <section class="nineteen-4years box">
+                        <h3>19 Months - 4 Years</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>4 years</td>
+                                <td><a onclick="funcOfDescription('IPV_4y-modal','IPV_4y');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Inactivated polio vaccine (IPV)</a><br>
+                                    (Diphtheria, tetanus, acellular pertussis (whooping cough) and inactivated polio)</td>
+                                <!-- The Modal -->
+                                <div id="IPV_4y-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Inactivated polio vaccine (IPV)</h3>
+                                        <p id="IPV_4y">
+                                            IPV: Inactivated polio vaccine. The polio virus in IPV has been inactivated (killed). The inactivated polio vaccine (IPV) is also called the Salk vaccine after the late American physician-virologist Jonas Salk.<br>
+                                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=4042" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>4 years</td>
+                                <td><a onclick="funcOfDescription('23vPPV_4y-modal','23vPPV_4y');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (23vPPV)</a><br>Children medically at-risk</td>
+                                <!-- The Modal -->
+                                <div id="23vPPV_4y-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Pneumococcal vaccine (23vPPV)</h3>
+                                        <p id="23vPPV_4y">
+                                            Pneumococcal polysaccharide vaccine (PPV) 23-valent pneumococcal polysaccharide vaccine (23vPPV) 23vPPV contains capsular polysaccharides derived from the 23 most frequent or most virulent types of S. pneumonia.<br>
+                                            <a href="http://www.pneumosmart.org.au/clinicians/vaccination/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <!--  other  -->
+                    <section class="other box">
+                        <h3>5+ Years</h3>
+                        <p>Description...</p>
+                        <table class="table-design">
+                            <tr class="header">
+                                <th style="width:25%;">Age</th>
+                                <th style="width:75%;">Vaccine</th>
+                            </tr>
+                            <tr>
+                                <td>10-15 years</td>
+                                <td><a onclick="funcOfDescription('HPV_other-modal','HPV_other');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Human papilloma virus (HPV)</a><br>usually 2 doses</td>
+                                <!-- The Modal -->
+                                <div id="HPV_other-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Human papilloma virus (HPV)</h3>
+                                        <p id="HPV_other">
+                                            A vaccine used to prevent genital warts, anal cancer, cervical cancer, vulvar cancer, and vaginal cancer caused by certain types of human papillomavirus (HPV). It is also used to prevent lesions that are caused by those viruses and that can lead to anal, cervical, vulvar, or vaginal cancer. Also called human papillomavirus vaccine<br>
+                                            <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hpv-vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>10-15 years</td>
+                                <td><a onclick="funcOfDescription('DTPa_other-modal','DTPa_other');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">DTPa</a></td>
+                                <!-- The Modal -->
+                                <div id="DTPa_other-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>DTPa</h3>
+                                        <p id="DTPa_other">
+                                            DTaP is a vaccine that helps children younger than age 7 develop immunity to three deadly diseases caused by bacteria: diphtheria, tetanus, and whooping cough (pertussis). Tdap is a booster immunization given at age 11 that offers continued protection from those diseases for adolescents and adults.<br>
+                                            <a href="https://www.webmd.com/children/vaccines/qa/what-should-you-know-about-dtap-and-tdap-vaccines" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>15-49 years</td>
+                                <td><a onclick="funcOfDescription('Influenza_other-modal','Influenza_other');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Influenza – annually</a><br>Aboriginal and Torres Strait Islander people 15 years and over</td>
+                                <!-- The Modal -->
+                                <div id="Influenza_other-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Influenza</h3>
+                                        <p id="Influenza_other">
+                                            A vaccine against influenza that typically contains a mixture of strains of influenza virus cultured in chick embryos:<br>
+                                            a : one that is injectable and contains formaldehyde-inactivated influenza viruses<br>
+                                            b : one that is delivered as a nasal spray and contains live attenuated influenza viruses<br>
+                                            <a href="https://www.merriam-webster.com/medical/influenza%20vaccine" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>15-49 years</td>
+                                <td><a onclick="funcOfDescription('23vPPV_other-modal','23vPPV_other');" style="text-decoration:underline;color:#0099cc;cursor:pointer;">Pneumococcal vaccine (23vPPV)<br></a>Aboriginal and Torres Strait Islander people medically at risk</td>
+                                <!-- The Modal -->
+                                <div id="23vPPV_other-modal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <h3>Pneumococcal vaccine (23vPPV)</h3>
+                                        <p id="23vPPV_other">
+                                            Pneumococcal polysaccharide vaccine (PPV) 23-valent pneumococcal polysaccharide vaccine (23vPPV) 23vPPV contains capsular polysaccharides derived from the 23 most frequent or most virulent types of S. pneumonia.<br>
+                                            <a href="http://www.pneumosmart.org.au/clinicians/vaccination/" target="_blank">source</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    
+                    <!--  Keyword Search Bar  -->
+<!--
                     <div class="input-container">
                         <i class="fa fa-search icon"></i>
                         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for age.." title="Type in an age">
                     </div>
-                    
+-->
+                    <!--  Keyword-search Table  -->
+<!--
                     <table id="myTable">
                         <tr class="header">
                             <th style="width:25%;">Age</th>
@@ -246,13 +755,8 @@
                         <tr>
                             <td>Birth</td>
                             <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
-<!--                            <p id="birth-HepB" style="display:none;">Some text in the Modal..</p>-->
-                            
-                            <!-- The Modal -->
                             <div id="HepB-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Hepatitis B immunization (HepB)</h3>
                                     <p id="HepB">
                                         Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
@@ -270,12 +774,8 @@
                         <tr>
                             <td>2 months</td>
                             <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="13vPCV-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
                                     <p id="13vPCV">
                                         13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
@@ -287,12 +787,8 @@
                         <tr>
                             <td>2 months</td>
                             <td><a onclick="funcOfDescription('RotaC-modal','RotaC');">Rotavirus (RotaC)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="RotaC-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Rotavirus (RotaC)</h3>
                                     <p id="RotaC">
                                         Two live, attenuated, oral rotavirus vaccines are internationally licensed, and routine childhood vaccination has been initiated in a number of countries. The clinical efficacy of the rotavirus vaccines has been demonstrated in most parts of the world. WHO recommends the inclusion of rotavirus vaccination in all national immunization programmes, particularly in countries at high risk of severe disease and fatal outcomes<br>
@@ -335,12 +831,8 @@
                             <td>6 months</td>
                             <td><a onclick="funcOfDescription('Influenza-modal','Influenza');">Influenza - annually</a><br>
                                 for those with certain medical risk factors 6 months and over and Aboriginal and Torres Strait Islander children 6-months to 5 years.</td>
-                            
-                            <!-- The Modal -->
                             <div id="Influenza-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Influenza</h3>
                                     <p id="Influenza">
                                         A vaccine against influenza that typically contains a mixture of strains of influenza virus cultured in chick embryos:<br>
@@ -354,12 +846,8 @@
                         <tr>
                             <td>12 months</td>
                             <td><a onclick="funcOfDescription('MMR-modal','MMR');">Measles, mumps and rubella (MMR)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="MMR-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Measles mumps and rubella vaccine (MMR)</h3>
                                     <p id="MMR">
                                         Measles immunization: The standard MMR vaccine is given to prevent measles, mumpsand rubella (German measles).<br>
@@ -371,12 +859,8 @@
                         <tr>
                             <td>12 months</td>
                             <td><a onclick="funcOfDescription('ACWY-modal','ACWY');">Meningococcal ACWY (Men ACWY)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="ACWY-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Meningococcal ACWY-135 conjugate vaccine (Men ACWY)</h3>
                                     <p id="ACWY">
                                         The MenACWY vaccine is given by a single injection into the upper arm and protects against 4 different strains of the meningococcal bacteria that cause meningitis and blood poisoning (septicaemia): A, C, W and Y. The MenACWY vaccine is called Nimenrix.<br>
@@ -393,12 +877,8 @@
                             <td>12 months</td>
                             <td><a onclick="funcOfDescription('HepA-modal','HepA');">Hepatitis A – 1st dose (HepA)</a><br>
                                 Aboriginal and Torres Strait Islander children in high-risk areas</td>
-                            
-                            <!-- The Modal -->
                             <div id="HepA-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Hepatitis A pediatric dose vaccine (HepA)</h3>
                                     <p id="HepA">
                                         Hepatitis A vaccine (Havrix, Vaqta) is used to prevent hepatitis A, a type of liver disease that is caused by the hepatitis A virus (HAV)<br>
@@ -410,12 +890,8 @@
                         <tr>
                             <td>18 months</td>
                             <td><a onclick="funcOfDescription('Hib-modal','Hib');">Haemophilus influenza type B (Hib)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="Hib-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Haemophilus influenzae type b vaccine (Hib)</h3>
                                     <p id="Hib">
                                         HIB immunization: This immunization is designed to prevent diseases caused by Haemophilus influenzae type B (HIB), a bacteria responsible for a range of serious "invasive" diseases including meningitis with potential brain damage and epiglottitis with airway obstruction.<br>
@@ -427,12 +903,8 @@
                         <tr>
                             <td>18 months</td>
                             <td><a onclick="funcOfDescription('MMRV-modal','MMRV');">Measles, mumps, rubella, chickenpox (MMRV)</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="MMRV-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Measles, mumps, rubella and varicella vaccine (MMRV)</h3>
                                     <p id="MMRV">
                                         A vaccine protects against measles, mumps, rubella, and varicella (chickenpox).<br>
@@ -444,12 +916,8 @@
                         <tr>
                             <td>18 months</td>
                             <td><a onclick="funcOfDescription('DTPa-modal','DTPa');">DTPa</a></td>
-                            
-                            <!-- The Modal -->
                             <div id="DTPa-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>DTPa</h3>
                                     <p id="DTPa">
                                         DTaP is a vaccine that helps children younger than age 7 develop immunity to three deadly diseases caused by bacteria: diphtheria, tetanus, and whooping cough (pertussis). Tdap is a booster immunization given at age 11 that offers continued protection from those diseases for adolescents and adults.<br>
@@ -467,12 +935,8 @@
                             <td>4 years</td>
                             <td><a onclick="funcOfDescription('IPV-modal','IPV');">Inactivated polio vaccine (IPV)</a><br>
                                 (Diphtheria, tetanus, acellular pertussis (whooping cough) and inactivated polio)</td>
-                            
-                            <!-- The Modal -->
                             <div id="IPV-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Inactivated polio vaccine (IPV)</h3>
                                     <p id="IPV">
                                         IPV: Inactivated polio vaccine. The polio virus in IPV has been inactivated (killed). The inactivated polio vaccine (IPV) is also called the Salk vaccine after the late American physician-virologist Jonas Salk.<br>
@@ -485,12 +949,8 @@
                             <td>4 years</td>
                             <td><a onclick="funcOfDescription('23vPPV-modal','23vPPV');">Pneumococcal vaccine (23vPPV)</a><br>
                                 Children medically at-risk</td>
-                            
-                            <!-- The Modal -->
                             <div id="23vPPV-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Pneumococcal vaccine (23vPPV)</h3>
                                     <p id="23vPPV">
                                         Pneumococcal polysaccharide vaccine (PPV) 23-valent pneumococcal polysaccharide vaccine (23vPPV) 23vPPV contains capsular polysaccharides derived from the 23 most frequent or most virulent types of S. pneumonia.<br>
@@ -503,12 +963,8 @@
                             <td>10-15 years</td>
                             <td><a onclick="funcOfDescription('HPV-modal','HPV');">Human papilloma virus (HPV)</a><br>
                                 usually 2 doses</td>
-                            
-                            <!-- The Modal -->
                             <div id="HPV-modal" class="modal">
-                                <!-- Modal content -->
                                 <div class="modal-content">
-<!--                                    <span class="close">&times;</span>-->
                                     <h3>Human papilloma virus (HPV)</h3>
                                     <p id="HPV">
                                         A vaccine used to prevent genital warts, anal cancer, cervical cancer, vulvar cancer, and vaginal cancer caused by certain types of human papillomavirus (HPV). It is also used to prevent lesions that are caused by those viruses and that can lead to anal, cervical, vulvar, or vaginal cancer. Also called human papillomavirus vaccine<br>
@@ -532,91 +988,36 @@
                                 Aboriginal and Torres Strait Islander people medically at risk</td>
                         </tr>
                     </table>
-
-                    <!-- Vaccine description -->
-                    <script>
-                        function funcOfDescription(myModal, descriptionId) {
-                            // Get the modal
-                            var modal = document.getElementById(myModal);
-
-                            // Get the button that opens the modal
-                            var btn = document.getElementById(descriptionId);
-
-//                            // Get the <span> element that closes the modal
-//                            var span = document.getElementsByClassName("close")[0];
-
-                            // Open the modal when the user clicks the button
-                            modal.style.display = "block";
-
-//                            // Close the modal when the user clicks on <span> (x)
-//                            span.onclick = function() {
-//                                modal.style.display = "none";
-//                            }
-
-                            // Close the modal when the user clicks anywhere outside of the modal
-                            window.onclick = function(event) {
-                                if (event.target == modal) {
-                                    modal.style.display = "none";
-                                }
-                            }
-                        }
-                    </script>
-                    
-                    <!-- Keyword-search table -->
-                    <script>
-                    function myFunction() {
-                        var input, filter, table, tr, td, i, txtValue;
-                        input = document.getElementById("myInput");
-                        filter = input.value.toUpperCase();
-                        table = document.getElementById("myTable");
-                        tr = table.getElementsByTagName("tr");
-                        for (i = 0; i < tr.length; i++) {
-                            td = tr[i].getElementsByTagName("td")[0];
-                            if (td) {
-                                txtValue = td.textContent || td.innerText;
-                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                    tr[i].style.display = "";
-                                } else {
-                                    tr[i].style.display = "none";
-                                }
-                            }       
-                        }
-                    }
-                    </script>
-                </div>
-                
-<!--
-                <div class="col-sm-4">
-                    <a href="html/comparison.html" style="color:inherit;text-decoration:none;">
-                        <button class="btn-to-compare">Compare</button>
-                    </a>
-                    <p>
-                        Bla bla bla....
-                    </p>
-                </div>
 -->
+
+                </div>
             </div>
             
             <br><br>
             
-            <div class="content container" id="filter" style="margin-top:40px;">
+            <div class="content container" style="margin-top:40px;">
                 <h2>Vaccines By Age</h2>
                 <p>How old is your children?</p>
 
                 <br>
 
                 <div class="row">
-                    <div class="col-sm-4">
-                        <a href="/html/birth-two.html" style="color:inherit;text-decoration:none;">
-                            <button class="btn-to-compare">Birth-2 months</button>
+                    <div class="col-sm-3">
+                        <a href="/html/birth.html" style="color:inherit;text-decoration:none;">
+                            <button class="btn-to-compare">Birth (7 days)</button>
                         </a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
+                        <a href="/html/zero-two.html" style="color:inherit;text-decoration:none;">
+                            <button class="btn-to-compare">0-2 months</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
                         <a href="/html/three-four.html" style="color:inherit;text-decoration:none;">
                             <button class="btn-to-compare">3-4 months</button>
                         </a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <a href="/html/five-six.html" style="color:inherit;text-decoration:none;">
                             <button class="btn-to-compare">5-6 months</button>
                         </a>
@@ -626,25 +1027,27 @@
                 <hr class="thematic_break">
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <a href="/html/seven-twelve.html" style="color:inherit;text-decoration:none;">
                             <button class="btn-to-compare">7-12 months</button>
                         </a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <a href="/html/thirteen.html" style="color:inherit;text-decoration:none;">
                             <button class="btn-to-compare">13-18 months</button>
                         </a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <a href="/html/nineteen.html" style="color:inherit;text-decoration:none;">
-                            <button class="btn-to-compare">19+ months</button>
+                            <button class="btn-to-compare">19 months - 4 years</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/html/other.html" style="color:inherit;text-decoration:none;">
+                            <button class="btn-to-compare">5+ years</button>
                         </a>
                     </div>
                 </div>
-
-                <hr class="thematic_break">
-                <br>
             </div>
         </div>
     </section>
@@ -658,44 +1061,44 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://www.rch.org.au/immigranthealth/clinical/Initial_assessment/">
+                    <a class="portfolio-item" href="https://www.mcri.edu.au/users/dr-margie-danchin/blog/its-worldwide-immunisation-week-three-reasons-we-should-vaccinate-our" target="_blank">
                         <span class="caption">
                             <span class="caption-content">
-                                <h2>Information about vaccination as per age</h2>
-                                <p class="mb-0">Description...</p>
+                                <h2>Top reasons for vaccination</h2>
+                                <p class="mb-0">Reasons to vaccine your kids</p>
                             </span>
                         </span>
                         <img class="img-fluid" src="img/kids1.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://immunisationhandbook.health.gov.au/vaccination-for-special-risk-groups/vaccination-for-migrants-refugees-and-people-seeking-asylum-in">
+                    <a class="portfolio-item" href="https://www.medicinenet.com/script/main/hp.asp" target="_blank">
                         <span class="caption">
                             <span class="caption-content">
-                                <h2>Immunization Handbook</h2>
-                                <p class="mb-0">Description...</p>
+                                <h2>Vaccine Description</h2>
+                                <p class="mb-0">Helpful information about vaccinations by MedicineNet</p>
                             </span>
                         </span>
                         <img class="img-fluid" src="img/kids2.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="http://apps.who.int/immunization_monitoring/globalsummary/countries?countrycriteria%5Bcountry%5D%5B%5D=CHN&commit=OK">
+                    <a class="portfolio-item" href="http://apps.who.int/immunization_monitoring/globalsummary/countries?countrycriteria%5Bcountry%5D%5B%5D=CHN&commit=OK" target="_blank">
                         <span class="caption">
                             <span class="caption-content">
                                 <h2>WHO vaccine-preventable diseases</h2>
-                                <p class="mb-0">Description...</p>
+                                <p class="mb-0">Information of different dieases</p>
                             </span>
                         </span>
                         <img class="img-fluid" src="img/kids3.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://www.health.gov.au">
+                    <a class="portfolio-item" href="https://mydr.com.au/kids-teens-health/vaccination-australian-standard-vaccination-schedule" target="_blank">
                         <span class="caption">
                             <span class="caption-content">
-                                <h2>Australia Government Immunisation</h2>
-                                <p class="mb-0">Description...</p>
+                                <h2>Australian Standard Vaccination Schedule</h2>
+                                <p class="mb-0">Detailed information of vaccination schedule</p>
                             </span>
                         </span>
                         <img class="img-fluid" src="img/kids4.jpg" alt="">
@@ -705,8 +1108,8 @@
         </div>
     </section>
 
-    <!-- Call to Action - Download Files -->
-    <section class="content-section bg-primary text-white">
+    <!-- Download Files -->
+    <section id="download" class="content-section bg-primary text-white">
         <div class="container text-center">
             <h2 class="mb-4">Get the Vaccine Schedule</h2>
             <a href="/img/vaccine_schedule.pdf" class="btn btn-xl btn-light mr-4" download>Download PDF</a>
@@ -715,7 +1118,7 @@
     </section>
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <section id="location" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
@@ -761,7 +1164,74 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    
+    <!-- Vaccine description -->
+    <script>
+        function funcOfDescription(myModal, descriptionId) {
+            // Get the modal
+            var modal = document.getElementById(myModal);
 
+            // Get the button that opens the modal
+            var btn = document.getElementById(descriptionId);
+
+//                            // Get the <span> element that closes the modal
+//                            var span = document.getElementsByClassName("close")[0];
+
+            // Open the modal when the user clicks the button
+            modal.style.display = "block";
+
+//                            // Close the modal when the user clicks on <span> (x)
+//                            span.onclick = function() {
+//                                modal.style.display = "none";
+//                            }
+
+            // Close the modal when the user clicks anywhere outside of the modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <!-- Keyword-search table -->
+    <script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }       
+        }
+    }
+    </script>
+    
+    <!--  Dropdown Option  -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
 </body>
 
 </html>

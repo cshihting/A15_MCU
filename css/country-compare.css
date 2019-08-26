@@ -10,6 +10,49 @@ body {
 }
 
 .content {
+    margin: 90px;
+    width: 90%;
+}
+
+.select-selected {
+    background-color: #ffffff;
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.box {
+    display: none;
+    margin: 60px;
+    width: 90%;
+}
+
+.china {
+    color: black;
+    margin: 100px;
+    width: 90%;
+}
+
+.india {
+    color: black;
+    margin: 100px;
+    width: 90%;
+}
+
+.vietnam {
+    color: black;
+    margin: 100px;
+    width: 90%;
+}
+
+.philippines {
+    color: black;
+    margin: 100px;
+    width: 90%;
+}
+
+.uk {
+    color: black;
     margin: 100px;
     width: 90%;
 }

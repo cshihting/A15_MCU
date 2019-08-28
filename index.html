@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -9,232 +8,155 @@
     <meta name="author" content="">
 
     <title>MCU</title>
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <!-- Custom Fonts -->
+    <!-- Font Awesome Icons -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    
-    <!--  Icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--  Safari RWD  -->
-<!--    <link rel="stylesheet" href="css/webkit.css" media="screen and (-webkit-min-device-pixel-ratio:0)" type="text/css"/>-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!--  Password  -->
-<!--
-    <script> 
-        pwIncorrect = true;
-        while (pwIncorrect) {
-            var password = prompt("Please enter the password:", "");
-            if (password == 111) {
-                alert('Password Correct! Click OK to enter!');
-                pwIncorrect = false;
-            }
-            else {
-                alert('Incorrect!');
-                pwIncorrect = true;
-            }
-        };
-    </script>
--->
+    <!-- Theme CSS - Includes Bootstrap -->
+    <link href="css/creative.min.css" rel="stylesheet">
     
+
 </head>
-    
+
 <body id="page-top">
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-        <i class="fas fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a class="js-scroll-trigger" href="#page-top">MCU</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#general">General Info</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#australia">Australia Info</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#links">Quick Links</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#location">Location</a>
-            </li>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">MCU</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#why">Why Vaccinate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Quick Links</a>
+          </li>
+<!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#location">Location</a>
+          </li>    
+-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
         </ul>
-    </nav>
-    
-    <!-- Header -->
-<!--
-    <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">Migrant Child Unit</h1>
-            <h3 class="mb-5">
-                <em>Immunisation Save Your Kids Life</em>
-            </h3>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-        </div>
-        <div class="overlay"></div>
-    </header>
--->
-
-    <!--  Slideshow  -->
-    <div class="container" style="margin-top:70px;">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" style="max-height: 500px !important;">
-
-                <div class="item active">
-                    <img src="img/kids1.jpg" alt="Los Angeles" style="width:100%;">
-<!--
-                    <div class="carousel-caption">
-                        <h3>Event 1</h3>
-                        <p>Take care of your kids!</p>
-                    </div>
--->
-                </div>
-
-                <div class="item">
-                    <img src="img/kids2.jpg" alt="Chicago" style="width:100%;">
-<!--
-                    <div class="carousel-caption">
-                        <h3>Event 2</h3>
-                        <p>Join us!</p>
-                    </div>
--->
-                </div>
-
-                <div class="item">
-                    <img src="img/kids3.jpg" alt="New York" style="width:100%;">
-<!--
-                    <div class="carousel-caption">
-                        <h3>Event 3</h3>
-                        <p>Health Care!</p>
-                    </div>
--->
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+      </div>
     </div>
+  </nav>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">Migrant Child Unit</h1>
+                    <hr class="divider my-4">
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 font-weight-light mb-5">Let's protect your kids!</p>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#why">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </header>
     
-    <!-- General Info -->
-    <section class="content-section bg-light" id="general">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2>General Information</h2>
-                    <p class="lead mb-5">This is a section for general vaccination information<br></p>
-                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- To top button -->
+    <button onclick="topFunction()" id="top-btn">^</button>
 
-    <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <!-- Why Vaccinate Section -->
+    <section class="page-section bg-primary" id="why">
         <div class="container">
-            <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Services</h3>
-                <h2 class="mb-5">What We Offer</h2>
+            <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Why Vaccinate?</h2>
+            <hr class="divider light my-4">
+            <p class="text-white-50 mb-4">Babies are vulnerable to serious and life-threatening diseases. This is why we aim to protect babies as early in life as possible. Child needs various vaccinations from time to time to as mother's antibodies are temporary and won’t fully protect a baby against all types of vaccine preventable diseases. Vaccination will protect them while their immune systems are still developing and prevents them from getting serious diseases. Australia has the National Immunisation Program (NIP) Schedule which is a series of immunisations given at specific intervals from birth to adulthood. It is advised to take vaccination of time to get the best possible direction from all diseases. Your child will require a full course of vaccines at critical times.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">what we offer</a>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-screen-smartphone"></i>
-                    </span>
-                    <h4>
-                        <strong>Information</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Basic knowledge about vaccinations.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-pencil"></i>
-                    </span>
-                    <h4>
-                        <strong>Location</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Nearby health centers and events.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-like"></i>
-                    </span>
-                    <h4>
-                        <strong>Education</strong>
-                    </h4>
-                    <p class="text-faded mb-0">User growth
-                        <i class="fas fa-heart"></i>
-                    Start MCU!</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-mustache"></i>
-                    </span>
-                    <h4>
-                        <strong>More</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Better understanding...</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Callout -->
+    <!-- Services Section -->
+    <section class="page-section" id="services">
+        <div class="container">
+            <h2 class="text-center mt-0">Our Services</h2>
+            <hr class="divider my-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">What should I know?</h3>
+                        <p class="text-muted mb-0">Before vaccination</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-search text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Vaccine Finder</h3>
+                        <p class="text-muted mb-0">Find out where to get vaccinated</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-book text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Events</h3>
+                        <p class="text-muted mb-0">Know more</p>
+                    </div>
+                </div>
 <!--
-    <section class="callout">
-        <div class="container text-center">
-            <h2 class="mx-auto mb-5">We are
-                <em>all-in-one</em>
-            website!</h2>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">See more!</a>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-question-circle text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Your doubts</h3>
+                        <p class="text-muted mb-0">
+                            <a href="https://vaccineinformation.org/faqs-common-questions/" target="_blank">Find answer</a>
+                        </p>
+                    </div>
+                </div>
+-->
+            </div>
         </div>
     </section>
--->
 
-    <!-- Australia Info -->
-    <section class="content-section" id="australia">
+    
+    <!-- Vaccination Schedule Info -->
+    <section class="page-section" id="schedule">
         <div class="container">
-            <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Australia Information</h3>
-                <h2 class="mb-5">Vaccinations</h2>
+            <div class="text-center">
+                <h2 class="mb-0" style="padding:20px">Vaccination Schedule</h2>
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-4 col-md-6 text-center">-->
+                        <p>
+                            This table shows vaccinations included in the Australian National Immunisation Program Schedule as well as some other recommended vaccinations. Below the table is a brief explanation of the types of vaccinations used.
+                        </p>
+<!--                    </div>-->
+<!--                    <div class="col-lg-8 col-md-6 text-center">-->
+                        <img class="img-fluid" src="img/vaccine_table.png" style="margin:20px;will-change:90%" alt="">
+<!--                    </div>  -->
+<!--                </div>-->
             </div>
             <div class="row">
                 <div class="col-sm-12" style="overflow-x:auto;">
+                    <h2 class="text-center">Vaccines By Age</h2>
+                    <p>How old is your children?</p>
                     <!--  Dropdown selection  -->
                     <select class="select-selected">
                         <option value = '0'>Select Age</option> 
@@ -251,7 +173,6 @@
                     <!--  Birth (7 days)  -->
                     <section class="birth box">
                         <h3>Birth (7 days)</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -278,7 +199,6 @@
                     <!--  0-2 months  -->
                     <section class="zero-2 box">
                         <h3>0-2 Months</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -337,7 +257,6 @@
                     <!--  3-4 months  -->
                     <section class="three-4 box">
                         <h3>3-4 Months</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -396,7 +315,6 @@
                     <!--  5-6 months  -->
                     <section class="five-6 box">
                         <h3>5-6 Months</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -473,7 +391,6 @@
                     <!--  7-12 months  -->
                     <section class="seven-12 box">
                         <h3>7-12 Months</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -550,7 +467,6 @@
                     <!--  13-18 months  -->
                     <section class="thirteen-18 box">
                         <h3>13-18 Months</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -623,7 +539,6 @@
                     <!--  19 months - 4 years -->
                     <section class="nineteen-4years box">
                         <h3>19 Months - 4 Years</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -666,7 +581,6 @@
                     <!--  other  -->
                     <section class="other box">
                         <h3>5+ Years</h3>
-                        <p>Description...</p>
                         <table class="table-design">
                             <tr class="header">
                                 <th style="width:25%;">Age</th>
@@ -736,270 +650,17 @@
                             </tr>
                         </table>
                     </section>
-                    
-                    
-                    <!--  Keyword Search Bar  -->
-<!--
-                    <div class="input-container">
-                        <i class="fa fa-search icon"></i>
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for age.." title="Type in an age">
-                    </div>
--->
-                    <!--  Keyword-search Table  -->
-<!--
-                    <table id="myTable">
-                        <tr class="header">
-                            <th style="width:25%;">Age</th>
-                            <th style="width:75%;">Vaccine</th>
-                        </tr>
-                        <tr>
-                            <td>Birth</td>
-                            <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a></td>
-                            <div id="HepB-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Hepatitis B immunization (HepB)</h3>
-                                    <p id="HepB">
-                                        Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
-                                        <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>2 months</td>
-                            <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a><br>
-                                (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
-                                Haemophilus influenzae type B, polio)</td>
-                        </tr>
-                        <tr>
-                            <td>2 months</td>
-                            <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a></td>
-                            <div id="13vPCV-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>13-valent pneumococcal conjugate vaccine (13vPCV)</h3>
-                                    <p id="13vPCV">
-                                        13-valent pneumococcal conjugate vaccine, A type of bacterial vaccine that is made by chemically linking (conjugating) a protein molecule with a tiny amount of the polysaccharide that makes up the cell coating of the bacterium. This improves the immune response to the vaccine. Examples are Haemophilus influenzae type b (Hib), meningococcal and pneumococcal conjugate vaccines<br>
-                                        <a href="https://immunisationhandbook.health.gov.au/technical-terms#conjugate-vaccine" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>2 months</td>
-                            <td><a onclick="funcOfDescription('RotaC-modal','RotaC');">Rotavirus (RotaC)</a></td>
-                            <div id="RotaC-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Rotavirus (RotaC)</h3>
-                                    <p id="RotaC">
-                                        Two live, attenuated, oral rotavirus vaccines are internationally licensed, and routine childhood vaccination has been initiated in a number of countries. The clinical efficacy of the rotavirus vaccines has been demonstrated in most parts of the world. WHO recommends the inclusion of rotavirus vaccination in all national immunization programmes, particularly in countries at high risk of severe disease and fatal outcomes<br>
-                                        <a href="https://www.who.int/ith/vaccines/rotavirus/en/" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>4 months</td>
-                            <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a><br>
-                                (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
-                                Haemophilus influenzae type B, polio)</td>
-                        </tr>
-                        <tr>
-                            <td>4 months</td>
-                            <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a></td>
-                        </tr>
-                        <tr>
-                            <td>4 months</td>
-                            <td><a onclick="funcOfDescription('RotaC-modal','RotaC');">Rotavirus (RotaC)</a></td>
-                        </tr>
-                        <tr>
-                            <td>6 months</td>
-                            <td><a onclick="funcOfDescription('HepB-modal','HepB');">Hepatitis B (HepB)</a><br>
-                                (hepatitis B, diphtheria, tetanus, acellular pertussis (whooping cough),<br>
-                                Haemophilus influenzae type B, polio)</td>
-                        </tr>
-                        <tr>
-                            <td>6 months</td>
-                            <td><a onclick="funcOfDescription('RotaC-modal','RotaC');">Rotavirus (RotaC)</a><br>
-                                (third dose is dependent on the brand of vaccine used)</td>
-                        </tr>
-                        <tr>
-                            <td>6 months</td>
-                            <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a><br>
-                                for Aboriginal and Torres Strait Islander children and medically at-risk children</td>
-                        </tr>
-                        <tr>
-                            <td>6 months</td>
-                            <td><a onclick="funcOfDescription('Influenza-modal','Influenza');">Influenza - annually</a><br>
-                                for those with certain medical risk factors 6 months and over and Aboriginal and Torres Strait Islander children 6-months to 5 years.</td>
-                            <div id="Influenza-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Influenza</h3>
-                                    <p id="Influenza">
-                                        A vaccine against influenza that typically contains a mixture of strains of influenza virus cultured in chick embryos:<br>
-                                        a : one that is injectable and contains formaldehyde-inactivated influenza viruses<br>
-                                        b : one that is delivered as a nasal spray and contains live attenuated influenza viruses<br>
-                                        <a href="https://www.merriam-webster.com/medical/influenza%20vaccine" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>12 months</td>
-                            <td><a onclick="funcOfDescription('MMR-modal','MMR');">Measles, mumps and rubella (MMR)</a></td>
-                            <div id="MMR-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Measles mumps and rubella vaccine (MMR)</h3>
-                                    <p id="MMR">
-                                        Measles immunization: The standard MMR vaccine is given to prevent measles, mumpsand rubella (German measles).<br>
-                                        <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=4303" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>12 months</td>
-                            <td><a onclick="funcOfDescription('ACWY-modal','ACWY');">Meningococcal ACWY (Men ACWY)</a></td>
-                            <div id="ACWY-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Meningococcal ACWY-135 conjugate vaccine (Men ACWY)</h3>
-                                    <p id="ACWY">
-                                        The MenACWY vaccine is given by a single injection into the upper arm and protects against 4 different strains of the meningococcal bacteria that cause meningitis and blood poisoning (septicaemia): A, C, W and Y. The MenACWY vaccine is called Nimenrix.<br>
-                                        <a href="https://www.nhs.uk/conditions/vaccinations/men-acwy-vaccine/" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>12 months</td>
-                            <td><a onclick="funcOfDescription('13vPCV-modal','13vPCV');">Pneumococcal vaccine (13vPCV)</a></td>
-                        </tr>
-                        <tr>
-                            <td>12 months</td>
-                            <td><a onclick="funcOfDescription('HepA-modal','HepA');">Hepatitis A – 1st dose (HepA)</a><br>
-                                Aboriginal and Torres Strait Islander children in high-risk areas</td>
-                            <div id="HepA-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Hepatitis A pediatric dose vaccine (HepA)</h3>
-                                    <p id="HepA">
-                                        Hepatitis A vaccine (Havrix, Vaqta) is used to prevent hepatitis A, a type of liver disease that is caused by the hepatitis A virus (HAV)<br>
-                                        <a href="https://www.medicinenet.com/hepatitis_a_vaccine-injection/article.htm" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>18 months</td>
-                            <td><a onclick="funcOfDescription('Hib-modal','Hib');">Haemophilus influenza type B (Hib)</a></td>
-                            <div id="Hib-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Haemophilus influenzae type b vaccine (Hib)</h3>
-                                    <p id="Hib">
-                                        HIB immunization: This immunization is designed to prevent diseases caused by Haemophilus influenzae type B (HIB), a bacteria responsible for a range of serious "invasive" diseases including meningitis with potential brain damage and epiglottitis with airway obstruction.<br>
-                                        <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3753" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>18 months</td>
-                            <td><a onclick="funcOfDescription('MMRV-modal','MMRV');">Measles, mumps, rubella, chickenpox (MMRV)</a></td>
-                            <div id="MMRV-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Measles, mumps, rubella and varicella vaccine (MMRV)</h3>
-                                    <p id="MMRV">
-                                        A vaccine protects against measles, mumps, rubella, and varicella (chickenpox).<br>
-                                        <a href="https://www.cdc.gov/vaccines/vpd/mmr/public/index.html" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>18 months</td>
-                            <td><a onclick="funcOfDescription('DTPa-modal','DTPa');">DTPa</a></td>
-                            <div id="DTPa-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>DTPa</h3>
-                                    <p id="DTPa">
-                                        DTaP is a vaccine that helps children younger than age 7 develop immunity to three deadly diseases caused by bacteria: diphtheria, tetanus, and whooping cough (pertussis). Tdap is a booster immunization given at age 11 that offers continued protection from those diseases for adolescents and adults.<br>
-                                        <a href="https://www.webmd.com/children/vaccines/qa/what-should-you-know-about-dtap-and-tdap-vaccines" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>18 months</td>
-                            <td><a onclick="funcOfDescription('HepA-modal','HepA');">Hepatitis A – 2nd dose (HepA)</a><br>
-                                Aboriginal and Torres Strait Islander children</td>
-                        </tr>
-                        <tr>
-                            <td>4 years</td>
-                            <td><a onclick="funcOfDescription('IPV-modal','IPV');">Inactivated polio vaccine (IPV)</a><br>
-                                (Diphtheria, tetanus, acellular pertussis (whooping cough) and inactivated polio)</td>
-                            <div id="IPV-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Inactivated polio vaccine (IPV)</h3>
-                                    <p id="IPV">
-                                        IPV: Inactivated polio vaccine. The polio virus in IPV has been inactivated (killed). The inactivated polio vaccine (IPV) is also called the Salk vaccine after the late American physician-virologist Jonas Salk.<br>
-                                        <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=4042" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>4 years</td>
-                            <td><a onclick="funcOfDescription('23vPPV-modal','23vPPV');">Pneumococcal vaccine (23vPPV)</a><br>
-                                Children medically at-risk</td>
-                            <div id="23vPPV-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Pneumococcal vaccine (23vPPV)</h3>
-                                    <p id="23vPPV">
-                                        Pneumococcal polysaccharide vaccine (PPV) 23-valent pneumococcal polysaccharide vaccine (23vPPV) 23vPPV contains capsular polysaccharides derived from the 23 most frequent or most virulent types of S. pneumonia.<br>
-                                        <a href="http://www.pneumosmart.org.au/clinicians/vaccination/" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>10-15 years</td>
-                            <td><a onclick="funcOfDescription('HPV-modal','HPV');">Human papilloma virus (HPV)</a><br>
-                                usually 2 doses</td>
-                            <div id="HPV-modal" class="modal">
-                                <div class="modal-content">
-                                    <h3>Human papilloma virus (HPV)</h3>
-                                    <p id="HPV">
-                                        A vaccine used to prevent genital warts, anal cancer, cervical cancer, vulvar cancer, and vaginal cancer caused by certain types of human papillomavirus (HPV). It is also used to prevent lesions that are caused by those viruses and that can lead to anal, cervical, vulvar, or vaginal cancer. Also called human papillomavirus vaccine<br>
-                                        <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hpv-vaccine" target="_blank">source</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <td>10-15 years</td>
-                            <td><a onclick="funcOfDescription('DTPa-modal','DTPa');">DTPa</a></td>
-                        </tr>
-                        <tr>
-                            <td>15-49 years</td>
-                            <td><a onclick="funcOfDescription('Influenza-modal','Influenza');">Influenza – annually</a><br>
-                                Aboriginal and Torres Strait Islander people 15 years and over</td>
-                        </tr>
-                        <tr>
-                            <td>15-49 years</td>
-                            <td><a onclick="funcOfDescription('23vPPV-modal','23vPPV');">Pneumococcal vaccine (23vPPV)<br></a>
-                                Aboriginal and Torres Strait Islander people medically at risk</td>
-                        </tr>
-                    </table>
--->
-
                 </div>
             </div>
             
             <br><br>
             
-            <div class="content container" style="margin-top:40px;">
-                <h2>Vaccines By Age</h2>
-                <p>How old is your children?</p>
-
-                <br>
+            <div class="container" style="margin-top:40px;">
+                <h2 class="text-center" style="margin:30px">
+                    Are you a migrant parents? 
+                </h2>
+                
+<!--                <button class="btn-to-compare">Get details</button>-->
 
                 <div class="row">
                     <div class="col-sm-3">
@@ -1051,72 +712,76 @@
             </div>
         </div>
     </section>
-    
-    <!-- Quick links -->
-    <section class="content-section" id="links">
-        <div class="container">
-            <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">information</h3>
-                <h2 class="mb-5">Quick Links</h2>
-            </div>
+
+  <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container-fluid p-0">
             <div class="row no-gutters">
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://www.mcri.edu.au/users/dr-margie-danchin/blog/its-worldwide-immunisation-week-three-reasons-we-should-vaccinate-our" target="_blank">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h2>Top reasons for vaccination</h2>
-                                <p class="mb-0">Reasons to vaccine your kids</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid" src="img/kids1.jpg" alt="">
+                <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="https://www.mcri.edu.au/users/dr-margie-danchin/blog/its-worldwide-immunisation-week-three-reasons-we-should-vaccinate-our" target="_blank">
+                        <img class="img-fluid" src="img/portfolio/top-reasons.png" alt="Top Reasons">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Top Reasons for Vaccination
+                            </div>
+                            <div class="project-category text-white-50">
+                                Reasons to vaccine your kids
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://www.medicinenet.com/script/main/hp.asp" target="_blank">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h2>Vaccine Description</h2>
-                                <p class="mb-0">Helpful information about vaccinations by MedicineNet</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid" src="img/kids2.jpg" alt="">
+                <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="https://vaccineinformation.org/faqs-common-questions/" target="_blank">
+                        <img class="img-fluid" src="img/portfolio/faq.jpg" alt="FAQ">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                FAQ
+                            </div>
+                            <div class="project-category text-white-50">
+                                Vaccine basics
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="http://apps.who.int/immunization_monitoring/globalsummary/countries?countrycriteria%5Bcountry%5D%5B%5D=CHN&commit=OK" target="_blank">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h2>WHO vaccine-preventable diseases</h2>
-                                <p class="mb-0">Information of different dieases</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid" src="img/kids3.jpg" alt="">
+                <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="http://apps.who.int/immunization_monitoring/globalsummary/countries?countrycriteria%5Bcountry%5D%5B%5D=CHN&commit=OK" target="_blank">
+                        <img class="img-fluid" src="img/portfolio/who.jpg" alt="WHO">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                WHO Vaccine-preventable Diseases
+                            </div>
+                            <div class="project-category text-white-50">
+                                For each country
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://mydr.com.au/kids-teens-health/vaccination-australian-standard-vaccination-schedule" target="_blank">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h2>Australian Standard Vaccination Schedule</h2>
-                                <p class="mb-0">Detailed information of vaccination schedule</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid" src="img/kids4.jpg" alt="">
+                <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-side-effects" target="_blank">
+                        <img class="img-fluid" src="img/portfolio/side-effects.png" alt="Side Effects">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Side Effects
+                            </div>
+                            <div class="project-category text-white-50">
+                                Find out more about possible side effects of immunisation
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Download Files -->
-    <section id="download" class="content-section bg-primary text-white">
+    <section id="download" class="page-section bg-dark text-white">
         <div class="container text-center">
-            <h2 class="mb-4">Get the Vaccine Schedule</h2>
-            <a href="/img/vaccine_schedule.pdf" class="btn btn-xl btn-light mr-4" download>Download PDF</a>
-            <a href="/img/vaccine_img.png" class="btn btn-xl btn-dark" download>Download Image</a>
+            <h2 class="mb-4">Downloads</h2>
+            <a href="/img/vaccine_schedule.pdf" class="btn btn-xl btn-light mr-4" style="width:20%" download>Vaccine Schedule</a>
+            <a href="/img/vaccine_side_effects.pdf" class="btn btn-xl btn-light mr-4" style="width:20%" download>Side Effects</a>
         </div>
     </section>
-
+    
     <!-- Map -->
     <section id="location" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
@@ -1124,36 +789,40 @@
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
+    </section>    
+
+    <!-- Team Info -->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0">Contact Us</h2>
+                    <hr class="divider my-4">
+                    <p class="text-muted mb-5">Question not answered yet? We are here to help!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                    <div>+614 - 11111111</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="mailto:contact@yourwebsite.com">contact@mcu.com</a>
+                </div>
+            </div>
+            <div class="col-lg-12 ml-auto text-center" style="margin:35px">
+                <img class="img-fluid" style="width:60%" src="img/team.jpg" alt="Team Image">
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="bg-light py-5">
         <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#">
-                        <i class="icon-social-facebook"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#">
-                        <i class="icon-social-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#">
-                        <i class="icon-social-github"></i>
-                    </a>
-                </li>
-            </ul>
-            <p class="text-muted small mb-0">Copyright &copy; MCU 2019</p>
+            <div class="small text-center text-muted">Copyright &copy; 2019 - MCU</div>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -1161,61 +830,64 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!--    this is for image popup-->
+    <!--  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>--> 
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/creative.min.js"></script>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("top-btn").style.display = "block";
+          } else {
+            document.getElementById("top-btn").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
     
     <!-- Vaccine description -->
     <script>
-        function funcOfDescription(myModal, descriptionId) {
-            // Get the modal
-            var modal = document.getElementById(myModal);
+    function funcOfDescription(myModal, descriptionId) {
+        // Get the modal
+        var modal = document.getElementById(myModal);
 
-            // Get the button that opens the modal
-            var btn = document.getElementById(descriptionId);
+        // Get the button that opens the modal
+        var btn = document.getElementById(descriptionId);
 
-//                            // Get the <span> element that closes the modal
-//                            var span = document.getElementsByClassName("close")[0];
+    //                            // Get the <span> element that closes the modal
+    //                            var span = document.getElementsByClassName("close")[0];
 
-            // Open the modal when the user clicks the button
-            modal.style.display = "block";
+        // Open the modal when the user clicks the button
+        modal.style.display = "block";
 
-//                            // Close the modal when the user clicks on <span> (x)
-//                            span.onclick = function() {
-//                                modal.style.display = "none";
-//                            }
+    //                            // Close the modal when the user clicks on <span> (x)
+    //                            span.onclick = function() {
+    //                                modal.style.display = "none";
+    //                            }
 
-            // Close the modal when the user clicks anywhere outside of the modal
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
+        // Close the modal when the user clicks anywhere outside of the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        }
-    </script>
-
-    <!-- Keyword-search table -->
-    <script>
-    function myFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }       
         }
     }
     </script>
-    
+
     <!--  Dropdown Option  -->
     <script type="text/javascript">
         $(document).ready(function(){

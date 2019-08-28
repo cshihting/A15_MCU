@@ -14,6 +14,12 @@ body {
     width: 90%;
 }
 
+.big-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 42%;
+}
+
 .select-selected {
     background-color: #ffffff;
     width: 200px;
@@ -23,37 +29,45 @@ body {
 
 .box {
     display: none;
-    margin: 60px;
     width: 90%;
 }
 
 .china {
     color: black;
-    margin: 100px;
+    margin-bottom: 90px;
     width: 90%;
 }
 
+/*
+.china-flag {
+    background-image: url("../img/china_flag.png");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+*/
+
 .india {
     color: black;
-    margin: 100px;
+    margin-bottom: 90px;
     width: 90%;
 }
 
 .vietnam {
     color: black;
-    margin: 100px;
+    margin-bottom: 90px;
     width: 90%;
 }
 
 .philippines {
     color: black;
-    margin: 100px;
+    margin-bottom: 90px;
     width: 90%;
 }
 
 .uk {
     color: black;
-    margin: 100px;
+    margin-bottom: 90px;
     width: 90%;
 }
 

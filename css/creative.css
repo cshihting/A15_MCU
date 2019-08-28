@@ -2832,13 +2832,13 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #f8f9fa;
+  background-color: #DBDBDB;
   border-color: #f8f9fa;
 }
 
 .btn-light:hover {
   color: #212529;
-  background-color: #e2e6ea;
+  background-color: #FCFCFC;
   border-color: #dae0e5;
 }
 
@@ -10374,7 +10374,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #f4623a !important;
+  color: #fff !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {

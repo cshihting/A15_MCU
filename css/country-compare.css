@@ -9,11 +9,6 @@ body {
     font-family: 'Source Sans Pro';
 }
 
-.content {
-    margin: 90px;
-    width: 90%;
-}
-
 .big-image {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -37,15 +32,6 @@ body {
     margin-bottom: 90px;
     width: 90%;
 }
-
-/*
-.china-flag {
-    background-image: url("../img/china_flag.png");
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-*/
 
 .india {
     color: black;
@@ -130,22 +116,16 @@ th, td {
     padding: 16px;
 }
 
-td a{
+td a {
     color: #454545;
     text-decoration: underline;
     cursor: pointer;
 }
 
-td a:hover{
+td a:hover {
     text-decoration: underline;
     color: blue;
 }
-
-/*
-th:first-child, td:first-child {
-    text-align: left;
-}
-*/
 
 /* Zebra-striped table rows */
 tr:nth-child(even) {

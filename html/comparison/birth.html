@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age - Birth (7 days)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../css/country-compare.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <!--  Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+    
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid"><a class="navbar-brand" href="../index.html">Home</a></div>
+    </nav>
+    
+    <section class="content container">
+        <h2>Age Birth (7 days) - Vaccines By Country</h2>
+        
+        <img class="big-image" src="../../images/age/birth.png" alt="">
+        
+        <p>Where are you from?</p>
+        
+        <select class="select-selected">
+            <option>Choose Country</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="philippines">Philippines</option>
+            <option value="uk">UK</option>
+        </select>
+    </section>
+    
+    <!--  China  -->
+    <section class="china box container">
+        <h3>China</h3>
+        <table>
+            <tr>
+                <th style="text-align: center;">Vaccines</th>
+                <th style="text-align: center;">Australia</th>
+                <th style="text-align: center;">China</th>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('C_BCG-modal','C_BCG');">卡介苗 (BCG)</a></td>
+                <!-- The Modal -->
+                <div id="C_BCG-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Bacille Calmette Guerin (BCG)</h3>
+                        <p id="C_BCG">
+                            BCG: An effective immunization against tuberculosis. BCG stands for Bacille Calmette Guerin. BCG is a weakened (attenuated) version of a bacteria called Mycobacterium bovis which is closely related to Mycobacterium tuberculosis, the agent responsible for tuberculosis<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=12067" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('C_HepB-modal','C_HepB');">Hepatitis B (HepB)</a></td>
+                <div id="C_HepB-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Hepatitis B immunization (HepB)</h3>
+                        <p id="C_HepB">
+                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--  India  -->
+    <section class="india box container">
+        <h3>India</h3>
+        <table>
+            <tr>
+                <th style="text-align: center;">Vaccine</th>
+                <th style="text-align: center;">Australia</th>
+                <th style="text-align: center;">India</th>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('I_BCG-modal','I_BCG');">卡介苗 (BCG)</a></td>
+                <!-- The Modal -->
+                <div id="I_BCG-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Bacille Calmette Guerin (BCG)</h3>
+                        <p id="I_BCG">
+                            BCG: An effective immunization against tuberculosis. BCG stands for Bacille Calmette Guerin. BCG is a weakened (attenuated) version of a bacteria called Mycobacterium bovis which is closely related to Mycobacterium tuberculosis, the agent responsible for tuberculosis<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=12067" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('I_HepB-modal','I_HepB');">Hepatitis B (HepB)</a></td>
+                <div id="I_HepB-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Hepatitis B immunization (HepB)</h3>
+                        <p id="I_HepB">
+                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('I_OPV-modal','I_OPV');">Oral polio vaccine 脊髓灰质炎疫苗 (OPV)</a></td>
+                <!-- The Modal -->
+                <div id="I_OPV-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Oral polio vaccine (OPV)</h3>
+                        <p id="I_OPV">
+                            OPV consists of a mixture of live attenuated poliovirus strains of each of the three serotypes, selected by their ability to mimic the immune response following infection with wild polioviruses, but with a significantly reduced incidence of spreading to the central nervous system. Three or more spaced doses of OPV are required to generate adequate levels of seroconversion. The action of oral polio vaccine (OPV) is two-pronged. OPV produces antibodies in the blood ('humoral' or serum immunity) to all three types of poliovirus, and in the event of infection, this protects the individual against polio paralysis by preventing the spread of poliovirus to the nervous system. OPV strains also produce a local immune response in the lining ('mucous membrane') of the intestines - the primary site for poliovirus multiplication. The antibodies produced there inhibit the multiplication of subsequent infections of 'wild' (naturally occurring) virus. This intestinal immune response to OPV is probably a reason why mass campaigns with OPV have been shown to stop person-to-person transmission of wild poliovirus. In very rare cases, the administration of OPV results in vaccine-associated paralysis associated with a reversion of the vaccine strains to the more neurovirulent profile of wild poliovirus. In a few instances, such vaccine strains have become both neurovirulent and transmissible and have resulted in infectious poliomyelitis.<br>
+                            <a href="https://www.who.int/biologicals/areas/vaccines/polio/opv/en/" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--  Vietnam  -->
+    <section class="vietnam box container">
+        <h3>Vietnam</h3>
+        <table>
+            <tr>
+                <th style="text-align: center;">Vaccine</th>
+                <th style="text-align: center;">Australia</th>
+                <th style="text-align: center;">Vietnam</th>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('V_BCG-modal','V_BCG');">卡介苗 (BCG)</a></td>
+                <!-- The Modal -->
+                <div id="V_BCG-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Bacille Calmette Guerin (BCG)</h3>
+                        <p id="V_BCG">
+                            BCG: An effective immunization against tuberculosis. BCG stands for Bacille Calmette Guerin. BCG is a weakened (attenuated) version of a bacteria called Mycobacterium bovis which is closely related to Mycobacterium tuberculosis, the agent responsible for tuberculosis<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=12067" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('V_HepB-modal','V_HepB');">Hepatitis B (HepB)</a></td>
+                <div id="V_HepB-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Hepatitis B immunization (HepB)</h3>
+                        <p id="V_HepB">
+                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--  Philippines  -->
+    <section class="philippines box container">
+        <h3>Philippines</h3>
+        <table>
+            <tr>
+                <th style="text-align: center;">Vaccine</th>
+                <th style="text-align: center;">Australia</th>
+                <th style="text-align: center;">Philippines</th>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('P_BCG-modal','P_BCG');">卡介苗 (BCG)</a></td>
+                <!-- The Modal -->
+                <div id="P_BCG-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Bacille Calmette Guerin (BCG)</h3>
+                        <p id="P_BCG">
+                            BCG: An effective immunization against tuberculosis. BCG stands for Bacille Calmette Guerin. BCG is a weakened (attenuated) version of a bacteria called Mycobacterium bovis which is closely related to Mycobacterium tuberculosis, the agent responsible for tuberculosis<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=12067" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('P_HepB-modal','P_HepB');">Hepatitis B (HepB)</a></td>
+                <div id="P_HepB-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Hepatitis B immunization (HepB)</h3>
+                        <p id="P_HepB">
+                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--  UK  -->
+    <section class="uk box container">
+        <h3>UK</h3>
+        <table>
+            <tr>
+                <th style="text-align: center;">Vaccine</th>
+                <th style="text-align: center;">Australia</th>
+                <th style="text-align: center;">UK</th>
+            </tr>
+            <tr>
+                <td><a onclick="funcOfDescription('U_HepB-modal','U_HepB');">Hepatitis B (HepB)</a></td>
+                <div id="U_HepB-modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+<!--                                    <span class="close">&times;</span>-->
+                        <h3>Hepatitis B immunization (HepB)</h3>
+                        <p id="U_HepB">
+                            Hepatitis B (hep B) vaccine gives prolonged protection, but 3 shots over a half year are usually required.<br>
+                            <a href="https://www.medicinenet.com/script/main/art.asp?articlekey=3709" target="_blank">source</a>
+                        </p>
+                    </div>
+                </div>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-remove"></i></td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Vaccine description -->
+    <script>
+        function funcOfDescription(myModal, descriptionId) {
+            // Get the modal
+            var modal = document.getElementById(myModal);
+
+            // Get the button that opens the modal
+            var btn = document.getElementById(descriptionId);
+
+//                            // Get the <span> element that closes the modal
+//                            var span = document.getElementsByClassName("close")[0];
+
+            // Open the modal when the user clicks the button
+            modal.style.display = "block";
+
+//                            // Close the modal when the user clicks on <span> (x)
+//                            span.onclick = function() {
+//                                modal.style.display = "none";
+//                            }
+
+            // Close the modal when the user clicks anywhere outside of the modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+    
+    <!--  Dropdown Option  -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
+</body>
+</html>

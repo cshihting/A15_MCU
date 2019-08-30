@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>Vaccines Finder</title>
+	<title>MCV | Vaccines Finder</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/animate.min.css">
@@ -21,8 +21,31 @@
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+    
+    <!--  Google Map Api Key  -->
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8&libraries=places&callback=initMap"
+        async defer></script>
+-->
+    
+    <style>
+        #map{
+            height:400px;
+            width:100%;
+            margin-top: 100px;
+        }
+    </style>
+
+    
+<!--
+    <style>
+    #map{
+      height:400px;
+      width:100%;
+    }
+  </style>
+-->
 </head>
- 
     
     
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
@@ -41,7 +64,7 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
                 </button>
-                <a href="../index.html" class="navbar-brand smoothScroll">MCU</a>
+                <a href="../index.html" class="navbar-brand smoothScroll">Migrant Child Vaccination</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -56,6 +79,7 @@
 
     
     <!-- Map -->
+<!--
     <section id="location" style="margin:120px 30px">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
@@ -63,16 +87,125 @@
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
     </section>    
+-->
+
+    <div id="map"></div>
+    <script>   
+    function initMap(position){
+        
+      // Map options
+      var options = {
+        zoom:8,
+        center:{lat:42.3601,lng:-71.0589}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+        
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+
+      /*
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat:42.4668,lng:-70.9495},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      */
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:42.4668,lng:-70.9495},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Lynn MA</h1>'
+        },
+        {
+          coords:{lat:42.8584,lng:-70.9300},
+          content:'<h1>Amesbury MA</h1>'
+        },
+        {
+          coords:{lat:42.7762,lng:-71.0773}
+        }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+    
+    <!--  Google Map Api Key  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8&libraries=places&callback=initMap"
+        async defer></script>
+
+  
+    
+<!--  API Key  -->
+<!--  AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8  -->
+    
+    
     
     
     <!-- Footer section -->
     <footer class="fixed-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-6 col-sm-6">
                     <p class="wow fadeInUp" data-wow-delay="1s" >Copyright &copy; 2019 MCU | 
                         <a href="#" title="free css templates" target="_blank">About Us</a>
-                    </p> 
+                    </p>
+                </div>
+                
+                <div class="col-md-6 col-sm-6">
+                    <div id="google_translate_element" class="wow fadeInUp" data-wow-delay="1s"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                 </div>
             </div>
         </div>

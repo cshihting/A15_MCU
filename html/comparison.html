@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="../css/owl.carousel.css">
 	<link rel="stylesheet" href="../css/vegas.min.css">
 	<link rel="stylesheet" href="../css/style.css">
+
     
 <!--    <link rel="stylesheet" type="text/css" href="../css/country-compare.css">-->
     
@@ -31,6 +32,100 @@
     
     
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+    
+    
+    <!-- input tag -->
+<!--
+	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search..." style="margin-top: 100px;margin-bottom:20px">
+    
+	<ol id='list'> 
+		<li class="animals">Cat</li> 
+		<li class="animals">Dog</li> 
+		<li class="animals">Elephant</li> 
+		<li class="animals">Fish</li> 
+		<li class="animals">Gorilla</li> 
+		<li class="animals">Monkey</li> 
+		<li class="animals">Turtle</li> 
+		<li class="animals">Whale</li> 
+		<li class="animals">Aligator</li> 
+		<li class="animals">Donkey</li> 
+		<li class="animals">Horse</li> 
+	</ol> 
+-->
+    
+    <script>
+        $("#inpt_search").on('focus', function () {
+            $(this).parent('label').addClass('active');
+        });
+
+        $("#inpt_search").on('blur', function () {
+            if($(this).val().length == 0)
+                $(this).parent('label').removeClass('active');
+        });
+    </script>
+    
+    <!--  Header search bar  -->
+<!--
+    <header id="header-1" class="header">
+      <nav class="header-nav">
+        <div class="search-button">
+          <a href="#" class="search-toggle" data-selector="#header-1"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">For Business</a></li>
+          <li><a href="#">For Personal</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <form action="" class="search-box">
+          <input type="text" class="text search-input" placeholder="Type here to search..." />
+        </form>
+      </nav>
+    </header>
+-->
+<!--
+
+    <header id="header-2" class="header">
+      <nav class="header-nav">
+        <div class="search-button">
+          <a href="#" class="search-toggle" data-selector="#header-2"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">For Business</a></li>
+          <li><a href="#">For Personal</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <form action="" class="search-box">
+          <input type="text" class="text search-input" placeholder="Type here to search..." />
+        </form>
+      </nav>
+    </header>
+
+    <header id="header-3" class="header">
+      <nav class="header-nav">
+        <div class="search-button">
+          <a href="#" class="search-toggle" data-selector="#header-3"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">For Business</a></li>
+          <li><a href="#">For Personal</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <form action="" class="search-box">
+          <input type="text" class="text search-input" placeholder="Type here to search..." />
+        </form>
+      </nav>
+    </header>
+    
+-->
+    
+    
     <!-- Preloader section -->
     <div class="preloader">
          <div class="sk-spinner sk-spinner-pulse"></div>
@@ -40,7 +135,7 @@
     <!-- Navigation section  -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header header-nav">
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
@@ -49,12 +144,36 @@
                 <a href="../index.html" class="navbar-brand smoothScroll">Migrant Child Vaccination</a>
             </div>
             <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right menu">
                     <li><a href="info.html" class="smoothScroll"><span>Information</span></a></li>
                     <li><a href="comparison.html" class="smoothScroll"><span>Comparison</span></a></li>
                     <li><a href="location.html" class="smoothScroll"><span>Location</span></a></li>
                     <li><a href="links.html" class="smoothScroll"><span>Quick Links</span></a></li>
                 </ul>
+            </div>
+        </div>
+        
+        <script>
+            $('.header').on('click', '.search-toggle', function(e) {
+              var selector = $(this).data('selector');
+
+              $(selector).toggleClass('show').find('.search-input').focus();
+              $(this).toggleClass('active');
+
+              e.preventDefault();
+            });
+        </script>
+    </div>
+    
+    
+    <!--  Animated search bar  -->
+    <div>
+        <div class="searchbar">
+            <div class="searchbar-innr">
+                <label class="search" for="inpt_search">
+                    <input id="inpt_search" type="text" placeholder="Search..."/>
+                </label>
+                <!--                <p>Search...</p>-->
             </div>
         </div>
     </div>
@@ -63,8 +182,8 @@
     <!--  Vaccine By Age  -->
     <section>
         <div class="container">
-            <h2 class="text-center" style="margin-top:130px;margin-bottom:60px">
-                Are you a migrant parents? 
+            <h2 class="text-center" style="margin-top:50px;margin-bottom:60px">
+                Are you a migrant parent? 
             </h2>
 
 <!--                <button class="white-btn">Get details</button>-->
@@ -3488,6 +3607,9 @@
             }).change();
         });
     </script>
+    
+    <!-- Search Bar -->
+	<script src="../js/searchbar.js"></script> 
                     
 </body>
 </html>

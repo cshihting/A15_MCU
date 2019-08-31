@@ -904,3 +904,122 @@ tr:nth-child(even) {
 .fa-remove {
   color: red;
 }
+
+
+
+/*---------------------------------------
+   Search Bar         
+-----------------------------------------*/
+/*
+
+#searchbar{ 
+	margin-left: 15%; 
+	padding:15px; 
+	border-radius: 10px; 
+} 
+
+input[type=text] { 
+	width: 30%; 
+	-webkit-transition: width 0.15s ease-in-out; 
+	transition: width 0.15s ease-in-out; 
+} 
+*/
+
+/* When the input field gets focus, 
+		change its width to 100% */
+/*
+input[type=text]:focus { 
+	width: 70%; 
+} 
+
+#list{ 
+	font-size: 1.5em; 
+	margin-left: 90px; 
+} 
+
+.animals{ 
+display: list-item;	 
+} 
+*/
+
+.searchbar {
+    margin-top: 50px;
+    background-color: #515151;
+/*    color:black;*/
+    display: table;
+    width: 100%;
+}
+
+.searchbar .searchbar-innr {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*** Search icon ***/
+.search {
+    display: inline-block;
+    position: relative;
+    height: 30px; /*35*/
+    width: 30px; /*35*/
+    box-sizing: border-box;
+    margin: 20px 8px 25px 0px;
+    padding: 1px 9px 0px 9px; /*7px 9px 0px 9px*/
+    border: 3px solid #fff;
+    border-radius: 20px; /*25*/
+    transition: all 200ms ease;
+    cursor: text;
+}
+
+.search:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 15px; /*20*/
+    right: -4px; /*-6*/
+    top: 20px; /*21*/
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all 200ms ease;
+}
+
+.search.active,
+.search:hover {
+    width: 250px; /*200*/
+    margin-right: 0px;
+}
+
+.search.active:after,
+.search:hover:after {
+    height: 0px;
+}
+
+/* Search input text */
+.search input {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    outline-width: 0px;
+    padding-left: 6px;
+}
+
+/* Placeholder Color */
+::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #A1A1A1;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #A1A1A1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #A1A1A1;
+}
+

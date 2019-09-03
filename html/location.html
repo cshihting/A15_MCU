@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>MCV | Vaccines Finder</title>
+	<title>Vaccines Finder | MCV</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/animate.min.css">
@@ -21,13 +21,6 @@
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-    
-    <!--  Google Map Api Key  -->
-<!--
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8&libraries=places&callback=initMap"
-        async defer></script>
--->
-
 </head>
     
     
@@ -52,8 +45,8 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="info.html" class="smoothScroll"><span>Information</span></a></li>
-                    <li><a href="comparison.html" class="smoothScroll"><span>Comparison</span></a></li>
-                    <li><a href="location.html" class="smoothScroll"><span>Location</span></a></li>
+                    <li><a href="comparison.html" class="smoothScroll"><span>Vaccines Comparison</span></a></li>
+                    <li><a href="location.html" class="smoothScroll"><span>Vaccines Finder</span></a></li>
                     <li><a href="links.html" class="smoothScroll"><span>Quick Links</span></a></li>
                 </ul>
             </div>
@@ -63,7 +56,6 @@
     
     
     <!-- Original Map -->
-<!--
     <section id="location" style="margin:120px 30px">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
@@ -71,100 +63,12 @@
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
     </section>    
--->
-    
-    
-    
-    <div id="page">
-        <div class="location"></div>
-    </div>
-    <!-- [/page] -->
-	<script> 
-		
-		(function ( $ ) {
-			$.fn.GeoLocation = function( options ) {
-				var settings = $.extend({
-					home: { latitude: 53.339381, longitude: -6.260533 },
-				}, options );
-				
-				var home = new google.maps.LatLng(settings.home.latitude, settings.home.longitude);
-					 
-				return this.each(function() {	
-					var element = $(this);
-					element.text('Attempting to find your location');
-					
-					function displayCurrentPosition(data) {
-						element.html('<div class="map-canvas"></div>');
-						
-						var current = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
-						
-						var options = {
-							center: current,
-							mapTypeId: google.maps.MapTypeId.HYBRID,
-							zoom: 10,
-						};
-						
-						var map = new google.maps.Map(element[0], options);
-							
-						var directions = {
-							origin: current,
-							destination: home,
-							travelMode: google.maps.DirectionsTravelMode.DRIVING
-						};
-						
-						display = new google.maps.DirectionsRenderer({ map: map });
-						
-						service = new google.maps.DirectionsService();
-						service.route(directions, function(response, status) {
-							if (status == google.maps.DirectionsStatus.OK) {
-								display.setDirections(response);
-							}
-							else
-								alert ('failed to get directions');
-						});
-					}
-					
-					function onError(error) {
-						switch(error.code) {
-							case error.PERMISSION_DENIED:
-								element.text('Access to location API denied by user');
-								break;
-							case error.POSITION_UNAVAILABLE:
-								element.text('Unable to determine location');
-								break;
-							case error.TIMEOUT:
-								element.text('Unable to determine location, the request timed out');
-								break;
-							case error.UNKNOWN_ERROR:
-								element.text('An unknown error occurred!');
-								break;
-						}
-					}
-					
-					if(navigator.geolocation) {
-						navigator.geolocation.getCurrentPosition(displayCurrentPosition, onError);
-					} else {
-						element.text('Geolocation is not supported by this browser, please upgrade to a more recent version');
-					}
-				});
-		 
-			};
-		 
-		}( jQuery ));
 
-		jQuery(document).ready(function() {
-			jQuery('div.location').GeoLocation();
-		});
-		
-	</script>
-    
     
     
     <!--  Google Map Api Key  -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8&libraries=places&callback=initMap"
         async defer></script>
-
-  
     
 <!--  API Key  -->
 <!--  AIzaSyDYSojeYqu89g2-T02IQzruxBdKdnVD5F8  -->
